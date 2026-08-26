@@ -1,7 +1,7 @@
 [
   {
-    "id": 33,
-    "title": "[33] PRISM: Reliable LLM Knowledge Distillation from Graph-Context Perspectives for Text-Attributed Graph Learning",
+    "id": 83,
+    "title": "[83] PRISM: Reliable LLM Knowledge Distillation from Graph-Context Perspectives for Text-Attributed Graph Learning",
     "authors": "Junghyun Kim, Sobin Jung, David Y. Kang, Sang-Wook Kim",
     "venue": "ACM CIKM 2026",
     "year": 2026,
@@ -12,8 +12,8 @@
     "links": {}
   },
   {
-    "id": 32,
-    "title": "[32] Who Should Teach? Confidence-Aware Dual-Teacher Learning for Few-Shot Node Classification on Text-Attributed Graphs",
+    "id": 82,
+    "title": "[82] Who Should Teach? Confidence-Aware Dual-Teacher Learning for Few-Shot Node Classification on Text-Attributed Graphs",
     "authors": "Hojin Kim, Sujin Yoon, Sungsu Lim, Dongwon Lee, David Y. Kang",
     "venue": "ACM CIKM 2026",
     "year": 2026,
@@ -24,8 +24,8 @@
     "links": {}
   },
   {
-    "id": 31,
-    "title": "[31] (Poster) Can LLMs Help Autistic Adults Understand Their Social Experiences? Self-Awareness Profiling from VR Sensor Data",
+    "id": 81,
+    "title": "[81] (Poster) Can LLMs Help Autistic Adults Understand Their Social Experiences? Self-Awareness Profiling from VR Sensor Data",
     "authors": "C Lee, B Kim",
     "venue": "ACM UbiComp 2026",
     "year": 2026,
@@ -36,8 +36,8 @@
     "links": {}
   },
   {
-    "id": 30,
-    "title": "[30] (Poster) CLEAR: Channel- and Domain-Aware Adaptive Receiver Selection in MIMO System Using a Large Language Model",
+    "id": 80,
+    "title": "[80] (Poster) CLEAR: Channel- and Domain-Aware Adaptive Receiver Selection in MIMO System Using a Large Language Model",
     "authors": "J Seo, B Kim†, D Sim†",
     "venue": "ACM UbiComp 2026",
     "year": 2026,
@@ -48,8 +48,8 @@
     "links": {}
   },
   {
-    "id": 29,
-    "title": "[29] TAHB: A Comprehensive Benchmark for Text-Attributed Hypergraph Learning",
+    "id": 79,
+    "title": "[79] TAHB: A Comprehensive Benchmark for Text-Attributed Hypergraph Learning",
     "authors": "David Y. Kang, Junghyun Kim, Juhyun Jeon, Sang-Wook Kim",
     "venue": "arXiv:2608.15055 (2026.08)",
     "year": 2026,
@@ -61,8 +61,8 @@
     }
   },
   {
-    "id": 28,
-    "title": "[28] HyperGC: Learning Hypergraph Representations via Full Hyperedge Reconstruction and Contrastive Learning",
+    "id": 78,
+    "title": "[78] HyperGC: Learning Hypergraph Representations via Full Hyperedge Reconstruction and Contrastive Learning",
     "authors": "David Y. Kang, So-Bin Jung, Sang-Wook Kim",
     "venue": "ACM KDD 2026",
     "year": 2026,
@@ -73,8 +73,8 @@
     "links": {}
   },
   {
-    "id": 27,
-    "title": "[27] An Empirical Study on the Ability of Large Language Models to Understand the Topology of Real-World Social Networks",
+    "id": 77,
+    "title": "[77] An Empirical Study on the Ability of Large Language Models to Understand the Topology of Real-World Social Networks",
     "authors": "Hojin Kim, Sujin Yoon, Bogoan Kim, David Y. Kang",
     "venue": "한국지능시스템학회논문지 (JKIIS, 2026.07)",
     "year": 2026,
@@ -85,8 +85,8 @@
     "links": {}
   },
   {
-    "id": 26,
-    "title": "[26] When Special Education Meets LLMs: Investigating the use of LLM-based Conversational AI by Special Education Teachers for Autism in China",
+    "id": 76,
+    "title": "[76] When Special Education Meets LLMs: Investigating the use of LLM-based Conversational AI by Special Education Teachers for Autism in China",
     "authors": "J Wu, D Choi, B Kim, H Hong",
     "venue": "ACM DIS 2026",
     "year": 2026,
@@ -96,8 +96,8 @@
     "links": {}
   },
   {
-    "id": 25,
-    "title": "[25] (Poster) Agreement Between Smartphone- and Research-grade Accelerometer-measured Step Counts in Autistic Adults in Free-living Conditions",
+    "id": 75,
+    "title": "[75] (Poster) Agreement Between Smartphone- and Research-grade Accelerometer-measured Step Counts in Autistic Adults in Free-living Conditions",
     "authors": "L McNulty, B Kim, AE Bodde, ML Mauriello, BC Helsel, D Lee",
     "venue": "ACSM 2026",
     "year": 2026,
@@ -107,8 +107,8 @@
     "links": {}
   },
   {
-    "id": 24,
-    "title": "[24] Improving the Accuracy of Community Detection on Signed Networks via Community Refinement and Contrastive Learning",
+    "id": 74,
+    "title": "[74] Improving the Accuracy of Community Detection on Signed Networks via Community Refinement and Contrastive Learning",
     "authors": "Hyunuk Shin, Hojin Kim, Chanyoung Lee, Yeon-Chang Lee, David Y. Kang",
     "venue": "ACM The Web Conference (WWW 2026)",
     "year": 2026,
@@ -119,8 +119,8 @@
     "links": {}
   },
   {
-    "id": 23,
-    "title": "[23] QuerySwitch: Supporting the Design Process by Balancing Vagueness through LLMs",
+    "id": 73,
+    "title": "[73] QuerySwitch: Supporting the Design Process by Balancing Vagueness through LLMs",
     "authors": "M Kim, B Kim, K Han",
     "venue": "ACM CHI 2026",
     "year": 2026,
@@ -135,8 +135,8 @@
     }
   },
   {
-    "id": 22,
-    "title": "[22] LAPS: Automating Hypothesis-Driven Statistical Analysis of Public Survey Using LLMs",
+    "id": 72,
+    "title": "[72] LAPS: Automating Hypothesis-Driven Statistical Analysis of Public Survey Using LLMs",
     "authors": "{J Kim*, D Jeong*}, B Son, H Kim, B Kim, K Han",
     "venue": "ACM CHI 2026",
     "year": 2026,
@@ -149,8 +149,8 @@
     }
   },
   {
-    "id": 21,
-    "title": "[21] “I Choose to Live, for Life Itself”: Understanding Agency of Home-Based Care Patients Through Information Practices and Relational Dynamics in Care Networks",
+    "id": 71,
+    "title": "[71] “I Choose to Live, for Life Itself”: Understanding Agency of Home-Based Care Patients Through Information Practices and Relational Dynamics in Care Networks",
     "authors": "{S-I Kim*, J Park*}, B Kim, H Hong",
     "venue": "ACM CHI 2026",
     "year": 2026,
@@ -164,8 +164,8 @@
     }
   },
   {
-    "id": 20,
-    "title": "[20] Understanding Human-Multi-Agent Team Formation for Creative Work",
+    "id": 70,
+    "title": "[70] Understanding Human-Multi-Agent Team Formation for Creative Work",
     "authors": "H Lim, D Choi, S Nam, B Kim, H Hong",
     "venue": "ACM CHI 2026",
     "year": 2026,
@@ -178,8 +178,8 @@
     }
   },
   {
-    "id": 19,
-    "title": "[19] VR-ACT: Transforming Clinical Evidence of Acceptance Commitment Therapy through VR for Subthreshold Depression",
+    "id": 69,
+    "title": "[69] VR-ACT: Transforming Clinical Evidence of Acceptance Commitment Therapy through VR for Subthreshold Depression",
     "authors": "B Kim, D Jeong, YS Choi, H Kim, K Han",
     "venue": "Springer Virtual Reality (2026.03)",
     "year": 2026,
@@ -192,8 +192,8 @@
     }
   },
   {
-    "id": 18,
-    "title": "[18] Mobile and VR Technologies for Social Independence in Autistic Individuals: A Scoping Review",
+    "id": 68,
+    "title": "[68] Mobile and VR Technologies for Social Independence in Autistic Individuals: A Scoping Review",
     "authors": "Bogoan Kim, David Y. Kang",
     "venue": "한국지능시스템학회논문지 (JKIIS, 2026.03)",
     "year": 2026,
@@ -204,8 +204,8 @@
     "links": {}
   },
   {
-    "id": 17,
-    "title": "[17] Revisiting Clique and Star Expansions in Hypergraph Representation Learning: Observations, Problems, and Solutions",
+    "id": 67,
+    "title": "[67] Revisiting Clique and Star Expansions in Hypergraph Representation Learning: Observations, Problems, and Solutions",
     "authors": "David Y. Kang, Eujeanne Kim, Kyungsik Han, Sang-Wook Kim",
     "venue": "IEEE Access (2026.01)",
     "year": 2026,
@@ -216,8 +216,8 @@
     "links": {}
   },
   {
-    "id": 16,
-    "title": "[16] Exploring the Potential of LLM as an Enhancer for Hypergraph Learning",
+    "id": 66,
+    "title": "[66] Exploring the Potential of LLM as an Enhancer for Hypergraph Learning",
     "authors": "JungHyun Kim, David Y. Kang, Sang-Wook Kim",
     "venue": "한국정보과학회 한국소프트웨어종합학술대회 (KSC 2025)",
     "year": 2025,
@@ -227,8 +227,8 @@
     "links": {}
   },
   {
-    "id": 15,
-    "title": "[15] Enhancing Mindfulness-Based Cognitive Therapy in a Virtual Reality: A Prospective Interventional Study",
+    "id": 65,
+    "title": "[65] Enhancing Mindfulness-Based Cognitive Therapy in a Virtual Reality: A Prospective Interventional Study",
     "authors": "{B Kim*, D Jeong*}, YS Choi, Y Choi, H Kim, K Han",
     "venue": "Scientific Reports (2025.09)",
     "year": 2025,
@@ -241,8 +241,8 @@
     }
   },
   {
-    "id": 14,
-    "title": "[14] A Generative AI System Interacting Based on Fashion Designers’ Abstract Expressions",
+    "id": 64,
+    "title": "[64] A Generative AI System Interacting Based on Fashion Designers’ Abstract Expressions",
     "authors": "M Kim, B Kim, K Han",
     "venue": "한국의류산업학회 춘계학술대회 (SFTI 2025)",
     "year": 2025,
@@ -252,8 +252,8 @@
     "links": {}
   },
   {
-    "id": 13,
-    "title": "[13] “I Don’t Know Why I Should Use This App”: Holistic Analysis on User Engagement Challenges in Mobile Mental Health",
+    "id": 63,
+    "title": "[63] “I Don’t Know Why I Should Use This App”: Holistic Analysis on User Engagement Challenges in Mobile Mental Health",
     "authors": "{S Jin*, B Kim*}, K Han",
     "venue": "ACM CHI 2025",
     "year": 2025,
@@ -266,8 +266,8 @@
     }
   },
   {
-    "id": 12,
-    "title": "[12] VR-Based Mindfulness for Depression Alleviation: Focusing on Content Development and Data Analysis",
+    "id": 62,
+    "title": "[62] VR-Based Mindfulness for Depression Alleviation: Focusing on Content Development and Data Analysis",
     "authors": "YS Choi, B Kim, D Jeong, H Kim, K Han",
     "venue": "한국HCI학회 학술대회 (HCI Korea 2025)",
     "year": 2025,
@@ -277,8 +277,8 @@
     "links": {}
   },
   {
-    "id": 11,
-    "title": "[11] Development of a Personalized Early Prediction Model for Cybersickness in Virtual Reality",
+    "id": 61,
+    "title": "[61] Development of a Personalized Early Prediction Model for Cybersickness in Virtual Reality",
     "authors": "YS Choi, D Jeong, B Kim, K Han",
     "venue": "정보과학회 컴퓨팅의 실제 논문지 (KTCP, 2025.02)",
     "year": 2025,
@@ -290,8 +290,8 @@
     "links": {}
   },
   {
-    "id": 10,
-    "title": "[10] A Study on the Effectiveness of VR-Based Mindfulness-Based Cognitive Therapy Using Multimodal Data",
+    "id": 60,
+    "title": "[60] A Study on the Effectiveness of VR-Based Mindfulness-Based Cognitive Therapy Using Multimodal Data",
     "authors": "Dayoung Jeong, Bogoan Kim, Yoonseon Choi, Kyungsik Han",
     "venue": "한국데이터마이닝학회 추계학술대회 (KDMS 2024)",
     "year": 2024,
@@ -302,8 +302,8 @@
     "links": {}
   },
   {
-    "id": 9,
-    "title": "[9] Development of a Personalized Early Prediction Model for Cybersickness in Virtual Reality Using LLM",
+    "id": 59,
+    "title": "[59] Development of a Personalized Early Prediction Model for Cybersickness in Virtual Reality Using LLM",
     "authors": "Yoonseon Choi, Dayoung Jeong, Bogoan Kim, Kyungsik Han",
     "venue": "한국데이터마이닝학회 추계학술대회 (KDMS 2024)",
     "year": 2024,
@@ -314,8 +314,8 @@
     "links": {}
   },
   {
-    "id": 8,
-    "title": "[8] (Poster) Early Prediction of Cybersickness in Virtual Reality Using a Large Language Model for Multimodal Time Series Data",
+    "id": 58,
+    "title": "[58] (Poster) Early Prediction of Cybersickness in Virtual Reality Using a Large Language Model for Multimodal Time Series Data",
     "authors": "Yoonseon Choi, Dayoung Jeong, Bogoan Kim, Kyungsik Han",
     "venue": "ACM UbiComp 2024",
     "year": 2024,
@@ -328,8 +328,8 @@
     }
   },
   {
-    "id": 7,
-    "title": "[7] Predicting Cybersickness in Virtual Reality through a Long-term Time Series Forecasting Model",
+    "id": 57,
+    "title": "[57] Predicting Cybersickness in Virtual Reality through a Long-term Time Series Forecasting Model",
     "authors": "Yoonseon Choi, Dayoung Jeong, Bogoan Kim, Kyungsik Han",
     "venue": "한국정보과학회 한국컴퓨터종합학술대회 (KCC 2024)",
     "year": 2024,
@@ -339,8 +339,8 @@
     "links": {}
   },
   {
-    "id": 6,
-    "title": "[6] Evaluating the Performance of Hypergraph Embedding Methods According to Hypergraph Sparsity",
+    "id": 56,
+    "title": "[56] Evaluating the Performance of Hypergraph Embedding Methods According to Hypergraph Sparsity",
     "authors": "So-Bin Jung, David Y. Kang, Sang-Wook Kim",
     "venue": "한국정보처리학회 춘계학술대회 (ASK 2024)",
     "year": 2024,
@@ -350,8 +350,8 @@
     "links": {}
   },
   {
-    "id": 5,
-    "title": "[5] Constructing a Graph-Based arXiv Dataset By Reflecting the Research Trend in Computer Science",
+    "id": 55,
+    "title": "[55] Constructing a Graph-Based arXiv Dataset By Reflecting the Research Trend in Computer Science",
     "authors": "Juhyun Jeon, David Y. Kang, Sang-Wook Kim",
     "venue": "한국정보처리학회 춘계학술대회 (ASK 2024)",
     "year": 2024,
@@ -361,8 +361,8 @@
     "links": {}
   },
   {
-    "id": 4,
-    "title": "[4] Narrating Routines through Game Dynamics: Impact of a Gamified Routine Management App for Autistic Individuals",
+    "id": 54,
+    "title": "[54] Narrating Routines through Game Dynamics: Impact of a Gamified Routine Management App for Autistic Individuals",
     "authors": "Bogoan Kim, Dayoung Jeong, Hwajung Hong, Kyungsik Han",
     "venue": "ACM CHI 2024",
     "year": 2024,
@@ -375,8 +375,8 @@
     }
   },
   {
-    "id": 3,
-    "title": "[3] Low Mileage, High Fidelity: Evaluating Hypergraph Expansion Methods by Quantifying the Information Loss",
+    "id": 53,
+    "title": "[53] Low Mileage, High Fidelity: Evaluating Hypergraph Expansion Methods by Quantifying the Information Loss",
     "authors": "David Y. Kang, Qiaozhu Mei, Sang-Wook Kim",
     "venue": "ACM The Web Conference (WWW 2024)",
     "year": 2024,
@@ -388,8 +388,8 @@
     "links": {}
   },
   {
-    "id": 2,
-    "title": "[2] Trustworthiness-Driven Graph Convolutional Networks for Signed Network Embedding",
+    "id": 52,
+    "title": "[52] Trustworthiness-Driven Graph Convolutional Networks for Signed Network Embedding",
     "authors": "Min-Jeong Kim, Yeon-Chang Lee, David Y. Kang, Sang-Wook Kim",
     "venue": "ACM Transactions on Knowledge Discovery from Data (TKDD) (2024.11)",
     "year": 2024,
@@ -400,8 +400,8 @@
     "links": {}
   },
   {
-    "id": 1,
-    "title": "[1] Promoting Self-Efficacy of Individuals With Autism in Practicing Social Skills in the Workplace Using Virtual Reality and Physiological Sensors: Mixed Methods Study",
+    "id": 51,
+    "title": "[51] Promoting Self-Efficacy of Individuals With Autism in Practicing Social Skills in the Workplace Using Virtual Reality and Physiological Sensors: Mixed Methods Study",
     "authors": "Sung-In Kim, So-youn Jang, Taewan Kim, Bogoan Kim, Dayoung Jeong, Taehyung Noh, Mingon Jeong, Kaely Hall, Meelim Kim, Hee Jeong Yoo, Kyungsik Han, Hwajung Hong, Jennifer G. Kim",
     "venue": "JMIR Formative Research (2024.01)",
     "year": 2024,
