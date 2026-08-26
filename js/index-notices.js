@@ -48,7 +48,12 @@ function initializeIndexPage() {
     const newsList = document.getElementById('home-news-list');
     if (newsList) {
         if (newsData && newsData.length > 0) {
-            const sorted = [...newsData].sort((a, b) => (b.id || 0) - (a.id || 0)).slice(0, 4);
+            const sorted = [...newsData].sort((a, b) => {
+                const dateA = String(a.date || '');
+                const dateB = String(b.date || '');
+                if (dateB !== dateA) return dateB.localeCompare(dateA);
+                return (b.id || 0) - (a.id || 0);
+            }).slice(0, 4);
             newsList.innerHTML = sorted.map(n => `
                 <li class="home-notice-item">
                     <a href="${prefix}community/notice-detail.html?id=${n.id}" class="notice-title">${n.title}</a>
@@ -64,7 +69,12 @@ function initializeIndexPage() {
     const eventsList = document.getElementById('home-events-list');
     if (eventsList) {
         if (eventsData && eventsData.length > 0) {
-            const sorted = [...eventsData].sort((a, b) => (b.id || 0) - (a.id || 0)).slice(0, 3);
+            const sorted = [...eventsData].sort((a, b) => {
+                const dateA = String(a.date || '');
+                const dateB = String(b.date || '');
+                if (dateB !== dateA) return dateB.localeCompare(dateA);
+                return (b.id || 0) - (a.id || 0);
+            }).slice(0, 3);
             eventsList.innerHTML = sorted.map(n => `
                 <li class="home-notice-item">
                     <a href="${prefix}community/news-detail.html?id=${n.id}" class="notice-title">${n.title}</a>

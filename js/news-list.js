@@ -5,6 +5,15 @@
 let currentEventsPage = 1;
 const eventsPerPage = 10;
 
+function sortEvents(data) {
+    return [...data].sort((a, b) => {
+        const dateA = String(a.date || '');
+        const dateB = String(b.date || '');
+        if (dateB !== dateA) return dateB.localeCompare(dateA);
+        return (b.id || 0) - (a.id || 0);
+    });
+}
+
 function loadEvents() {
     const tableContainer = document.getElementById('events-list');
     const cardContainer = document.getElementById('news-list');
@@ -21,7 +30,7 @@ function loadEvents() {
         return;
     }
 
-    const sorted = [...eventsData].sort((a, b) => (b.id || 0) - (a.id || 0));
+    const sorted = sortEvents(eventsData);
     displayEvents(currentEventsPage, sorted);
     displayEventsPagination(sorted);
 }
@@ -110,7 +119,7 @@ function displayEventsPagination(sorted) {
 
 function changeEventsPage(page) {
     currentEventsPage = page;
-    const sorted = [...eventsData].sort((a, b) => (b.id || 0) - (a.id || 0));
+    const sorted = sortEvents(eventsData);
     displayEvents(currentEventsPage, sorted);
     displayEventsPagination(sorted);
     window.scrollTo({ top: 0, behavior: 'smooth' });

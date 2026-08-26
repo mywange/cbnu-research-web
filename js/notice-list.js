@@ -5,6 +5,15 @@
 const itemsPerPage = 10;
 let currentPage = 1;
 
+function sortNotices(data) {
+    return [...data].sort((a, b) => {
+        const dateA = String(a.date || '');
+        const dateB = String(b.date || '');
+        if (dateB !== dateA) return dateB.localeCompare(dateA);
+        return (b.id || 0) - (a.id || 0);
+    });
+}
+
 function loadNotices() {
     const container = document.getElementById('notice-list');
     if (!container) return;
@@ -18,7 +27,7 @@ function loadNotices() {
         return;
     }
 
-    const sorted = [...newsData].sort((a, b) => (b.id || 0) - (a.id || 0));
+    const sorted = sortNotices(newsData);
     displayNotices(currentPage, sorted);
     displayPagination(sorted);
 }
@@ -85,7 +94,7 @@ function displayPagination(sorted) {
 
 function changeNoticePage(page) {
     currentPage = page;
-    const sorted = [...newsData].sort((a, b) => (b.id || 0) - (a.id || 0));
+    const sorted = sortNotices(newsData);
     displayNotices(currentPage, sorted);
     displayPagination(sorted);
     window.scrollTo({ top: 0, behavior: 'smooth' });
