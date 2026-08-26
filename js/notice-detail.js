@@ -40,6 +40,16 @@ function loadNoticeDetail() {
     displayNoticeDetail(notice);
 }
 
+function formatYearMonth(dateStr) {
+    if (!dateStr) return '-';
+    const cleaned = String(dateStr).trim().replace(/-/g, '.');
+    const parts = cleaned.split('.');
+    if (parts.length >= 2) {
+        return `${parts[0]}.${parts[1]}`;
+    }
+    return cleaned;
+}
+
 function displayNoticeDetail(notice) {
     // Set Header Metadata
     const titleEl = document.getElementById('notice-title');
@@ -52,7 +62,7 @@ function displayNoticeDetail(notice) {
     if (titleEl) titleEl.textContent = notice.title;
     if (categoryEl) categoryEl.textContent = notice.category || 'News';
     if (authorEl) authorEl.textContent = notice.author || 'Admin';
-    if (dateEl) dateEl.textContent = notice.date || '-';
+    if (dateEl) dateEl.textContent = formatYearMonth(notice.date);
 
     if (newBadgeEl) {
         newBadgeEl.style.display = notice.isNew ? 'inline-block' : 'none';

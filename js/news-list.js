@@ -35,6 +35,16 @@ function loadEvents() {
     displayEventsPagination(sorted);
 }
 
+function formatYearMonth(dateStr) {
+    if (!dateStr) return '-';
+    const cleaned = String(dateStr).trim().replace(/-/g, '.');
+    const parts = cleaned.split('.');
+    if (parts.length >= 2) {
+        return `${parts[0]}.${parts[1]}`;
+    }
+    return cleaned;
+}
+
 function displayEvents(page, sorted) {
     const tableContainer = document.getElementById('events-list');
     const cardContainer = document.getElementById('news-list');
@@ -66,7 +76,7 @@ function displayEvents(page, sorted) {
                     <a href="news-detail.html?id=${item.id}">${item.title}</a>
                 </div>
                 <div class="notice-author">Admin</div>
-                <div class="notice-date-col">${item.date}</div>
+                <div class="notice-date-col">${formatYearMonth(item.date)}</div>
             </div>
         `}).join('');
     } else {
@@ -82,8 +92,8 @@ function displayEvents(page, sorted) {
                     <h3><a href="news-detail.html?id=${item.id}">${item.title}</a></h3>
                     <p class="news-summary">${item.summary || ''}</p>
                     <div class="news-meta">
-                        <span class="news-date">${item.date}</span>
-                        <span class="news-author">Source: ${item.author || 'CBNU'}</span>
+                        <span class="news-date">${formatYearMonth(item.date)}</span>
+                        <span class="news-author">Source: ${item.author || 'Admin'}</span>
                     </div>
                 </div>
             </article>

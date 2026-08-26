@@ -8,6 +8,12 @@ function formatHomePubAuthors(authorsStr) {
     return authorsStr.replace(officialMembersPattern, '<strong>$1</strong>');
 }
 
+function formatYearOnly(dateStr) {
+    if (!dateStr) return '';
+    const match = String(dateStr).match(/\b(20\d\d)\b/);
+    return match ? match[1] : String(dateStr).substring(0, 4);
+}
+
 function initializeIndexPage() {
     const isSubdir = window.location.pathname.includes('/about/') ||
                      window.location.pathname.includes('/community/') ||
@@ -57,7 +63,7 @@ function initializeIndexPage() {
             newsList.innerHTML = sorted.map(n => `
                 <li class="home-notice-item">
                     <a href="${prefix}community/notice-detail.html?id=${n.id}" class="notice-title">${n.title}</a>
-                    <span class="notice-date">${n.date}</span>
+                    <span class="notice-date">${formatYearOnly(n.date)}</span>
                 </li>
             `).join('');
         } else {
@@ -78,7 +84,7 @@ function initializeIndexPage() {
             eventsList.innerHTML = sorted.map(n => `
                 <li class="home-notice-item">
                     <a href="${prefix}community/news-detail.html?id=${n.id}" class="notice-title">${n.title}</a>
-                    <span class="notice-date">${n.date}</span>
+                    <span class="notice-date">${formatYearOnly(n.date)}</span>
                 </li>
             `).join('');
         } else {

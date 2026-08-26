@@ -39,6 +39,16 @@ function loadNewsDetail() {
     displayEventDetail(item);
 }
 
+function formatYearMonth(dateStr) {
+    if (!dateStr) return '-';
+    const cleaned = String(dateStr).trim().replace(/-/g, '.');
+    const parts = cleaned.split('.');
+    if (parts.length >= 2) {
+        return `${parts[0]}.${parts[1]}`;
+    }
+    return cleaned;
+}
+
 function displayEventDetail(item) {
     // Set Header Metadata
     const titleEl = document.getElementById('notice-title');
@@ -51,7 +61,7 @@ function displayEventDetail(item) {
     if (titleEl) titleEl.textContent = item.title;
     if (categoryEl) categoryEl.textContent = item.category || 'Event';
     if (authorEl) authorEl.textContent = item.author || 'Organizer';
-    if (dateEl) dateEl.textContent = item.date || '-';
+    if (dateEl) dateEl.textContent = formatYearMonth(item.date);
 
     if (newBadgeEl) {
         newBadgeEl.style.display = item.isNew ? 'inline-block' : 'none';

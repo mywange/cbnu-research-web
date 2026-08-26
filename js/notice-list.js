@@ -32,6 +32,16 @@ function loadNotices() {
     displayPagination(sorted);
 }
 
+function formatYearMonth(dateStr) {
+    if (!dateStr) return '-';
+    const cleaned = String(dateStr).trim().replace(/-/g, '.');
+    const parts = cleaned.split('.');
+    if (parts.length >= 2) {
+        return `${parts[0]}.${parts[1]}`;
+    }
+    return cleaned;
+}
+
 function displayNotices(page, sorted) {
     const startIndex = (page - 1) * itemsPerPage;
     const endIndex = startIndex + itemsPerPage;
@@ -60,7 +70,7 @@ function displayNotices(page, sorted) {
                 <a href="notice-detail.html?id=${item.id}">${item.title}</a>
             </div>
             <div class="notice-author">Admin</div>
-            <div class="notice-date-col">${item.date}</div>
+            <div class="notice-date-col">${formatYearMonth(item.date)}</div>
         </div>
     `}).join('');
 }
