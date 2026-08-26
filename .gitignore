@@ -46,7 +46,10 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-# ── Environment & Secrets ──
+# ── Environment, Secrets & Admin Docs ──
+ADMIN_GUIDE.md
+*ADMIN*.md
+admin-guide/
 .env
 .env.local
 .env.development.local
