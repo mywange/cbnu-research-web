@@ -78,11 +78,19 @@ function initializeIndexPage() {
         if (galleryData && galleryData.length > 0 && galleryData.some(g => g.thumbnail || g.image)) {
             const validPhotos = galleryData.filter(g => g.thumbnail || g.image);
             const sorted = [...validPhotos].sort((a, b) => (b.id || 0) - (a.id || 0)).slice(0, 3);
-            galleryGrid.innerHTML = sorted.map(g => `
-                <div class="home-gallery-item">
-                    <img src="${g.thumbnail || g.image}" alt="${g.title}" loading="lazy">
-                </div>
-            `).join('');
+            galleryGrid.innerHTML = sorted.map(g => {
+                const rawPath = g.thumbnail || g.image || '';
+                // Resolve path for root index.html (remove leading ../)
+                const cleanImgPath = rawPath.replace(/^\.\.\//, '');
+                return `
+                <a href="community/gallery.html" class="home-gallery-item">
+                    ${g.date ? `<span class="home-gallery-date-badge">${g.date}</span>` : ''}
+                    <img src="${cleanImgPath}" alt="${g.title || 'Lab Photo'}" loading="lazy">
+                    <div class="home-gallery-overlay">
+                        <h4 class="home-gallery-title">${g.title || 'Lab Photo'}</h4>
+                    </div>
+                </a>
+            `}).join('');
         } else {
             galleryGrid.innerHTML = `
                 <div class="gallery-empty-state" style="grid-column: 1 / -1; padding: 40px 24px; text-align: center; background: #f8fafc; border: 1.5px dashed #cbd5e1; border-radius: 12px; color: #64748b;">

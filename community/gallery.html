@@ -259,22 +259,29 @@
     <script src="../script.js"></script>
     <script src="../js/data-loader.js"></script>
     <script>
+        function resolveImgPath(raw) {
+            if (!raw) return '';
+            return '../' + raw.replace(/^(\.\.\/|\.\/)/, '');
+        }
+
         function renderGallery() {
             const container = document.getElementById('gallery-grid-container');
             if (!container) return;
             if (typeof galleryData !== 'undefined' && galleryData.length > 0 && galleryData.some(g => g.thumbnail || g.image)) {
                 const valid = galleryData.filter(g => g.thumbnail || g.image);
-                container.innerHTML = valid.map((g, idx) => `
+                container.innerHTML = valid.map((g, idx) => {
+                    const imgSrc = resolveImgPath(g.thumbnail || g.image);
+                    return `
                     <div class="gallery-item" onclick="openLightbox(${idx})">
                         ${g.date ? `<div class="gallery-item-date-badge">${g.date}</div>` : ''}
                         <div class="gallery-img-wrapper">
-                            <img src="${g.thumbnail || g.image}" alt="${g.title || 'Gallery photo'}" loading="lazy">
+                            <img src="${imgSrc}" alt="${g.title || 'Gallery photo'}" loading="lazy">
                         </div>
                         <div class="gallery-item-overlay">
                             <h3 class="gallery-item-caption">${g.title || 'Lab Photo'}</h3>
                         </div>
                     </div>
-                `).join('');
+                `}).join('');
             } else {
                 container.innerHTML = `
                     <div class="gallery-empty-state-box">
@@ -286,13 +293,13 @@
             }
         }
 
-        let currentValidGallery = [];
         function openLightbox(index) {
             const valid = (typeof galleryData !== 'undefined' ? galleryData : []).filter(g => g.thumbnail || g.image);
             const item = valid[index];
             if (!item) return;
 
-            document.getElementById('lightboxImg').src = item.image || item.thumbnail;
+            const fullImgSrc = resolveImgPath(item.image || item.thumbnail);
+            document.getElementById('lightboxImg').src = fullImgSrc;
             document.getElementById('lightboxTitle').textContent = item.title || 'Lab Photo';
             document.getElementById('lightboxDesc').textContent = item.description || item.date || '';
             document.getElementById('lightboxModal').classList.add('active');

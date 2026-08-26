@@ -1622,7 +1622,113 @@ img {
     .post-detail-title { font-size: 1.4rem; }
     .post-detail-body { padding: 24px 20px; font-size: 0.98rem; }
     .notice-attachments { margin: 0 20px 20px; padding: 14px 16px; }
-    .post-detail-footer { padding: 18px 0 0; }
+/* ── Home Page Gallery Showcase ── */
+.home-gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+@media (max-width: 992px) {
+    .home-gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 18px;
+    }
+}
+
+@media (max-width: 640px) {
+    .home-gallery-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+}
+
+.home-gallery-item {
+    border-radius: 12px;
+    overflow: hidden;
+    background: #0F172A;
+    border: 1px solid var(--border-color);
+    position: relative;
+    cursor: pointer;
+    aspect-ratio: 1 / 1;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
+    transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s ease, border-color 0.3s ease;
+    text-decoration: none;
+    display: block;
+}
+
+.home-gallery-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 14px 28px rgba(15, 23, 42, 0.14);
+    border-color: var(--primary-color);
+}
+
+.home-gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.45s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.home-gallery-item:hover img {
+    transform: scale(1.06);
+}
+
+.home-gallery-date-badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 3;
+    background: rgba(15, 23, 42, 0.65);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    color: #FFFFFF;
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    font-weight: 600;
+    padding: 3px 8px;
+    border-radius: 999px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    letter-spacing: 0.02em;
+}
+
+.home-gallery-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    padding: 36px 16px 14px;
+    background: linear-gradient(180deg, rgba(15, 23, 42, 0) 0%, rgba(15, 23, 42, 0.82) 45%, rgba(15, 23, 42, 0.96) 100%);
+    color: #FFFFFF;
+    opacity: 0;
+    transform: translateY(8px);
+    transition: opacity 0.3s ease, transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.home-gallery-item:hover .home-gallery-overlay {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@media (hover: none) {
+    .home-gallery-overlay {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.home-gallery-title {
+    font-family: var(--font-headline);
+    font-size: 0.95rem;
+    font-weight: 750;
+    color: #FFFFFF;
+    line-height: 1.4;
+    margin: 0;
+    word-break: keep-all;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
 }
 
 /* ── Home Page Showcase ── */
