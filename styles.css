@@ -1622,6 +1622,9 @@ img {
     .post-detail-title { font-size: 1.4rem; }
     .post-detail-body { padding: 24px 20px; font-size: 0.98rem; }
     .notice-attachments { margin: 0 20px 20px; padding: 14px 16px; }
+    .post-detail-footer { padding: 18px 0 0; }
+}
+
 /* ── Home Page Gallery Showcase ── */
 .home-gallery-grid {
     display: grid;
