@@ -32,7 +32,7 @@
     "category": "conf",
     "scope": "intl",
     "lab": "HAI",
-    "rank": "BKCSA - 3",
+    "rank": "BKCSA 3",
     "links": {}
   },
   {
@@ -44,7 +44,7 @@
     "category": "conf",
     "scope": "intl",
     "lab": "HAI",
-    "rank": "BKCSA - 3",
+    "rank": "BKCSA 3",
     "links": {}
   },
   {
@@ -292,7 +292,7 @@
   {
     "id": 10,
     "title": "[10] A Study on the Effectiveness of VR-Based Mindfulness-Based Cognitive Therapy Using Multimodal Data",
-    "authors": "D Jeong, B Kim, YS Choi, K Han",
+    "authors": "Dayoung Jeong, Bogoan Kim, Yoonseon Choi, Kyungsik Han",
     "venue": "한국데이터마이닝학회 추계학술대회 (KDMS 2024)",
     "year": 2024,
     "category": "conf",
@@ -304,7 +304,7 @@
   {
     "id": 9,
     "title": "[9] Development of a Personalized Early Prediction Model for Cybersickness in Virtual Reality Using LLM",
-    "authors": "YS Choi, D Jeong, B Kim, K Han",
+    "authors": "Yoonseon Choi, Dayoung Jeong, Bogoan Kim, Kyungsik Han",
     "venue": "한국데이터마이닝학회 추계학술대회 (KDMS 2024)",
     "year": 2024,
     "category": "conf",
@@ -316,7 +316,7 @@
   {
     "id": 8,
     "title": "[8] (Poster) Early Prediction of Cybersickness in Virtual Reality Using a Large Language Model for Multimodal Time Series Data",
-    "authors": "YS Choi, D Jeong, B Kim, K Han",
+    "authors": "Yoonseon Choi, Dayoung Jeong, Bogoan Kim, Kyungsik Han",
     "venue": "ACM UbiComp 2024",
     "year": 2024,
     "category": "conf",
@@ -330,7 +330,7 @@
   {
     "id": 7,
     "title": "[7] Predicting Cybersickness in Virtual Reality through a Long-term Time Series Forecasting Model",
-    "authors": "YS Choi, D Jeong, B Kim, K Han",
+    "authors": "Yoonseon Choi, Dayoung Jeong, Bogoan Kim, Kyungsik Han",
     "venue": "한국정보과학회 한국컴퓨터종합학술대회 (KCC 2024)",
     "year": 2024,
     "category": "conf",
@@ -363,7 +363,7 @@
   {
     "id": 4,
     "title": "[4] Narrating Routines through Game Dynamics: Impact of a Gamified Routine Management App for Autistic Individuals",
-    "authors": "B Kim, D Jeong, H Hong, K Han",
+    "authors": "Bogoan Kim, Dayoung Jeong, Hwajung Hong, Kyungsik Han",
     "venue": "ACM CHI 2024",
     "year": 2024,
     "category": "conf",
@@ -402,7 +402,7 @@
   {
     "id": 1,
     "title": "[1] Promoting Self-Efficacy of Individuals With Autism in Practicing Social Skills in the Workplace Using Virtual Reality and Physiological Sensors: Mixed Methods Study",
-    "authors": "SI Kim, S Jang, T Kim, B Kim, D Jeong, T Noh, M Jeong, K Hall, M Kim, HJ Yoo, K Han, H Hong, JG Kim",
+    "authors": "Sung-In Kim, So-youn Jang, Taewan Kim, Bogoan Kim, Dayoung Jeong, Taehyung Noh, Mingon Jeong, Kaely Hall, Meelim Kim, Hee Jeong Yoo, Kyungsik Han, Hwajung Hong, Jennifer G. Kim",
     "venue": "JMIR Formative Research (2024.01)",
     "year": 2024,
     "category": "journal",

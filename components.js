@@ -35,11 +35,11 @@ function loadHeader() {
                     <li class="nav-item ${isAbout ? 'active' : ''}">
                         <a href="../about/about.html">About</a>
                     </li>
-                    <li class="nav-item ${isPublications ? 'active' : ''}">
-                        <a href="../publications/publications.html">Publications</a>
-                    </li>
                     <li class="nav-item ${isPeople ? 'active' : ''}">
                         <a href="../people/people.html">People</a>
+                    </li>
+                    <li class="nav-item ${isPublications ? 'active' : ''}">
+                        <a href="../publications/publications.html">Publications</a>
                     </li>
                     <li class="nav-item ${isNotice ? 'active' : ''}">
                         <a href="../community/notice.html">News</a>

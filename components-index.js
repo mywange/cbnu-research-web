@@ -27,10 +27,10 @@ function loadHeader() {
                         <a href="about/about.html">About</a>
                     </li>
                     <li class="nav-item">
-                        <a href="publications/publications.html">Publications</a>
+                        <a href="people/people.html">People</a>
                     </li>
                     <li class="nav-item">
-                        <a href="people/people.html">People</a>
+                        <a href="publications/publications.html">Publications</a>
                     </li>
                     <li class="nav-item">
                         <a href="community/notice.html">News</a>

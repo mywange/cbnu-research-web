@@ -4,7 +4,7 @@
 
 function formatHomePubAuthors(authorsStr) {
     if (!authorsStr) return '';
-    const officialMembersPattern = /\b(David Y\. Kang\*?|David Yoon Suk Kang\*?|Yoonsuk Kang\*?|강윤석\*?|Bogoan Kim[†\*]?|김보관\*?|Hojin Kim\*?|김호진\*?|Changu Lee\*?|이창우\*?|Seungjun Park\*?|박승준\*?|Sujin Yoon\*?|윤수진\*?|Minhyeok Kim\*?|김민혁\*?|Dong Hyeon Lee\*?|Donghyeon Lee\*?|이동현\*?|Dong Wook Lee\*?|이동욱\*?|Dayun Jeong\*?|정다윤\*?|Siwang Seo\*?|서시왕\*?)\b/g;
+    const officialMembersPattern = /\b(David Y\. Kang\*?|David Yoon Suk Kang\*?|Yoonsuk Kang\*?|강윤석\*?|Bogoan Kim[†\*]?|B Kim[†\*]?|김보관\*?|Hojin Kim\*?|김호진\*?|Changu Lee\*?|C Lee\*?|이창우\*?|Seungjun Park\*?|박승준\*?|Sujin Yoon\*?|윤수진\*?|Minhyeok Kim\*?|김민혁\*?|Dong Hyeon Lee\*?|Donghyeon Lee\*?|이동현\*?|Dong Wook Lee\*?|이동욱\*?|Dayoung Jeong\*?|Dayun Jeong\*?|D Jeong\*?|정다윤\*?|Siwang Seo\*?|서시왕\*?)\b/g;
     return authorsStr.replace(officialMembersPattern, '<strong>$1</strong>');
 }
 
