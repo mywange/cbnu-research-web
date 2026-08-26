@@ -4,9 +4,9 @@ date: "2026.05.18"
 author: "Admin"
 ---
 
-DM Lab(데이터 마이닝 연구실)의 연구 논문이 세계 최고 권위의 데이터 마이닝 학술대회인 **ACM KDD 2026** [BKCSA 4]에 게재 승인되었습니다.
+A research paper from **DM Lab (Data Mining Lab)** has been accepted to **ACM KDD 2026** [BKCSA 4], the premier conference in data science and data mining.
 
 - **HyperGC: Learning Hypergraph Representations via Full Hyperedge Reconstruction and Contrastive Learning**  
   *David Y. Kang*, So-Bin Jung*, Sang-Wook Kim*
 
-우수한 연구 성과를 거둔 DM Lab 연구진과 모든 저자분들께 축하를 전합니다! 👏
+Congratulations to the DM Lab team and all co-authors on this great accomplishment! 👏
