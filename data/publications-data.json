@@ -38,7 +38,7 @@
   {
     "id": 80,
     "title": "[80] (Poster) CLEAR: Channel- and Domain-Aware Adaptive Receiver Selection in MIMO System Using a Large Language Model",
-    "authors": "J Seo, B Kim†, D Sim†",
+    "authors": "J Seo, B Kim†, D Sim† (†co-corresponding)",
     "venue": "ACM UbiComp 2026",
     "year": 2026,
     "category": "conf",
@@ -137,7 +137,7 @@
   {
     "id": 72,
     "title": "[72] LAPS: Automating Hypothesis-Driven Statistical Analysis of Public Survey Using LLMs",
-    "authors": "{J Kim*, D Jeong*}, B Son, H Kim, B Kim, K Han",
+    "authors": "J Kim*, D Jeong*, B Son, H Kim, B Kim, Kyungsik Han (*equal contribution)",
     "venue": "ACM CHI 2026",
     "year": 2026,
     "category": "conf",
@@ -151,7 +151,7 @@
   {
     "id": 71,
     "title": "[71] “I Choose to Live, for Life Itself”: Understanding Agency of Home-Based Care Patients Through Information Practices and Relational Dynamics in Care Networks",
-    "authors": "{S-I Kim*, J Park*}, B Kim, H Hong",
+    "authors": "S-I Kim*, J Park*, B Kim, H Hong (*equal contribution)",
     "venue": "ACM CHI 2026",
     "year": 2026,
     "category": "conf",
@@ -180,7 +180,7 @@
   {
     "id": 69,
     "title": "[69] VR-ACT: Transforming Clinical Evidence of Acceptance Commitment Therapy through VR for Subthreshold Depression",
-    "authors": "B Kim, D Jeong, YS Choi, H Kim, K Han",
+    "authors": "B Kim, D Jeong, YS Choi, H Kim, Kyungsik Han",
     "venue": "Springer Virtual Reality (2026.03)",
     "year": 2026,
     "category": "journal",
@@ -229,7 +229,7 @@
   {
     "id": 65,
     "title": "[65] Enhancing Mindfulness-Based Cognitive Therapy in a Virtual Reality: A Prospective Interventional Study",
-    "authors": "{B Kim*, D Jeong*}, YS Choi, Y Choi, H Kim, K Han",
+    "authors": "Bogoan Kim*, Dayoung Jeong*, Yoonseon Choi, Yoonyoung Choi, Hyungsook Kim, Kyungsik Han (*equal contribution)",
     "venue": "Scientific Reports (2025.09)",
     "year": 2025,
     "category": "journal",
@@ -243,7 +243,7 @@
   {
     "id": 64,
     "title": "[64] A Generative AI System Interacting Based on Fashion Designers’ Abstract Expressions",
-    "authors": "M Kim, B Kim, K Han",
+    "authors": "Myungjin Kim, Bogoan Kim, Kyungsik Han",
     "venue": "한국의류산업학회 춘계학술대회 (SFTI 2025)",
     "year": 2025,
     "category": "conf",
@@ -254,7 +254,7 @@
   {
     "id": 63,
     "title": "[63] “I Don’t Know Why I Should Use This App”: Holistic Analysis on User Engagement Challenges in Mobile Mental Health",
-    "authors": "{S Jin*, B Kim*}, K Han",
+    "authors": "Seungwan Jin*, Bogoan Kim*, Kyungsik Han (*equal contribution)",
     "venue": "ACM CHI 2025",
     "year": 2025,
     "category": "conf",
@@ -268,7 +268,7 @@
   {
     "id": 62,
     "title": "[62] VR-Based Mindfulness for Depression Alleviation: Focusing on Content Development and Data Analysis",
-    "authors": "YS Choi, B Kim, D Jeong, H Kim, K Han",
+    "authors": "Yoonseon Choi, Bogoan Kim, Dayoung Jeong, Kyungsik Han",
     "venue": "한국HCI학회 학술대회 (HCI Korea 2025)",
     "year": 2025,
     "category": "conf",
@@ -279,7 +279,7 @@
   {
     "id": 61,
     "title": "[61] Development of a Personalized Early Prediction Model for Cybersickness in Virtual Reality",
-    "authors": "YS Choi, D Jeong, B Kim, K Han",
+    "authors": "Yoonseon Choi, Dayoung Jeong, Bogoan Kim, Kyungsik Han",
     "venue": "정보과학회 컴퓨팅의 실제 논문지 (KTCP, 2025.02)",
     "year": 2025,
     "category": "journal",
