@@ -40,18 +40,20 @@ function displayNotices(page, sorted) {
         return;
     }
 
-    container.innerHTML = pageItems.map(item => `
+    container.innerHTML = pageItems.map((item, idx) => {
+        const rowNum = sorted.length - (startIndex + idx);
+        return `
         <div class="notice-row">
             <div class="notice-num">
-                ${item.isNew ? '<span class="badge-new">NEW</span>' : item.id}
+                ${rowNum}
             </div>
             <div class="notice-subject">
                 <a href="notice-detail.html?id=${item.id}">${item.title}</a>
             </div>
-            <div class="notice-author">${item.category || item.author || 'Admin'}</div>
+            <div class="notice-author">Admin</div>
             <div class="notice-date-col">${item.date}</div>
         </div>
-    `).join('');
+    `}).join('');
 }
 
 function displayPagination(sorted) {

@@ -1,9 +1,7 @@
 ---
 title: "1st Data Intelligence × Human-Computer Interaction Workshop @ UNIST"
 date: "2026.07.15"
-category: "Workshop"
-author: "Research Group"
-isNew: false
+author: "Admin"
 ---
 
 ## 🧳 제1회 Data Intelligence × HCI 공동 워크숍 @ UNIST
