@@ -16,17 +16,24 @@ Desktop.ini
 *~
 *.tmp
 
-# ── Private / RAW Photos & Uncompressed Media ──
+# ── Private Photos & Admin Docs ──
+ADMIN_GUIDE.md
+*ADMIN*.md
+admin-guide/
+images/private/
+images/drafts/
+data/drafts/
 *.heic
 *.HEIC
 *.raw
 *.RAW
 *.cr2
 *.nef
-private/
-images/private/
-images/drafts/
-data/drafts/
+
+# ── Personal Local Scripts & Tools ──
+*.bat
+scripts/
+*.ps1
 
 # ── IDE & Editor Settings ──
 .vscode/
@@ -37,29 +44,29 @@ data/drafts/
 .gemini/
 .agents/
 
+# ── Build Outputs & Platform Caches ──
+dist/
+build/
+out/
+.netlify/
+.vercel/
+.cache/
+.temp/
+
 # ── Node.js / Package Manager ──
 node_modules/
-package-lock.json
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-# ── Environment, Secrets & Admin Docs ──
-ADMIN_GUIDE.md
-*ADMIN*.md
-admin-guide/
+# ── Environment & Secrets ──
 .env
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
+.env.*
 *.pem
 *.key
 
-# ── Logs & Temporary Caches ──
+# ── Logs ──
 logs/
 *.log
-.cache/
-.temp/
