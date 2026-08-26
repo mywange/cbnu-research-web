@@ -1607,9 +1607,9 @@ img {
 
 /* Post Detail Action Footer */
 .post-detail-footer {
-    padding: 20px 36px;
-    background: #F8FAFC;
-    border-top: 1px solid var(--border-light);
+    padding: 24px 0 0;
+    background: transparent;
+    border-top: none;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -1622,7 +1622,7 @@ img {
     .post-detail-title { font-size: 1.4rem; }
     .post-detail-body { padding: 24px 20px; font-size: 0.98rem; }
     .notice-attachments { margin: 0 20px 20px; padding: 14px 16px; }
-    .post-detail-footer { padding: 16px 20px; }
+    .post-detail-footer { padding: 18px 0 0; }
 }
 
 /* ── Home Page Showcase ── */
