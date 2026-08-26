@@ -30,13 +30,13 @@ function initializeIndexPage() {
 
             pubList.innerHTML = topPubs.map(p => `
                 <li class="home-pub-item">
-                    <span class="home-pub-year-badge">${p.year}</span>
                     <div class="home-pub-content">
                         <a href="${prefix}publications/publications.html" class="home-pub-title">
                             ${p.title}
                         </a>
                         <div class="home-pub-venue">${p.venue}</div>
                     </div>
+                    <span class="home-pub-date">${p.year}</span>
                 </li>
             `).join('');
         } else {
@@ -51,8 +51,8 @@ function initializeIndexPage() {
             const sorted = [...newsData].sort((a, b) => (b.id || 0) - (a.id || 0)).slice(0, 4);
             newsList.innerHTML = sorted.map(n => `
                 <li class="home-notice-item">
-                    <span class="home-notice-date-badge">${n.date}</span>
                     <a href="${prefix}community/notice-detail.html?id=${n.id}" class="notice-title">${n.title}</a>
+                    <span class="notice-date">${n.date}</span>
                 </li>
             `).join('');
         } else {
@@ -67,8 +67,8 @@ function initializeIndexPage() {
             const sorted = [...eventsData].sort((a, b) => (b.id || 0) - (a.id || 0)).slice(0, 3);
             eventsList.innerHTML = sorted.map(n => `
                 <li class="home-notice-item">
-                    <span class="home-notice-date-badge">${n.date}</span>
                     <a href="${prefix}community/news-detail.html?id=${n.id}" class="notice-title">${n.title}</a>
+                    <span class="notice-date">${n.date}</span>
                 </li>
             `).join('');
         } else {
