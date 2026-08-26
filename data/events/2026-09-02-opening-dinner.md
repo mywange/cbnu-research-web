@@ -1,5 +1,5 @@
 ---
-title: "2026 Fall Semester Opening Gathering & Dinner"
+title: "🍻 2026 Fall Semester Opening Gathering & Dinner"
 date: "2026.09.02"
 author: "Admin"
 ---

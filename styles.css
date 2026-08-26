@@ -727,8 +727,8 @@ img {
 
 .people-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
-    gap: 28px 20px;
+    grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+    gap: 36px 24px;
 }
 
 .person-card {
@@ -739,38 +739,38 @@ img {
 }
 
 .person-photo {
-    width: 110px;
-    height: 110px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
     object-fit: cover;
     object-position: center 20%;
     aspect-ratio: 1 / 1;
-    border: 3px solid #F1D4DF;
-    margin-bottom: 12px;
+    border: 4px solid #F1D4DF;
+    margin-bottom: 14px;
     background: #F8FAFC;
     display: flex;
     align-items: center;
     justify-content: center;
     color: #94A3B8;
-    box-shadow: 0 4px 12px rgba(185, 37, 85, 0.08);
-    transition: border-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0 6px 18px rgba(185, 37, 85, 0.10);
+    transition: border-color 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
 }
 
 .person-card:hover .person-photo {
     border-color: var(--primary-color);
-    transform: scale(1.05);
-    box-shadow: 0 6px 18px rgba(185, 37, 85, 0.16);
+    transform: scale(1.06);
+    box-shadow: 0 10px 24px rgba(185, 37, 85, 0.20);
 }
 
 .person-photo .material-symbols-outlined {
-    font-size: 48px;
+    font-size: 56px;
 }
 
 .person-name {
     font-family: var(--font-headline);
-    font-size: 0.98rem;
+    font-size: 1.05rem;
     font-weight: 700;
-    color: #111;
+    color: #0F172A;
     margin: 0 0 4px;
 }
 

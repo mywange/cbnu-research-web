@@ -1,5 +1,5 @@
 ---
-title: "1st Data Intelligence × Human-Computer Interaction Workshop @ UNIST"
+title: "🧳 1st Data Intelligence × Human-Computer Interaction Workshop @ UNIST"
 date: "2026.07.15"
 author: "Admin"
 ---
