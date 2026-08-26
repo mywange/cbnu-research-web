@@ -394,48 +394,59 @@ img {
 .home-notice-item {
     display: flex;
     align-items: center;
-    gap: 12px;
-    padding: 13px 4px;
+    gap: 16px;
+    padding: 13px 6px;
     border-bottom: 1px solid var(--border-light);
+    transition: background-color 0.2s ease;
 }
 
-.home-notice-item .notice-badge {
+.home-notice-item:hover {
+    background-color: #FAFAFA;
+}
+
+.home-notice-date-badge {
     flex-shrink: 0;
+    width: 90px;
+    text-align: center;
     font-family: var(--font-mono);
-    font-size: 0.72rem;
+    font-size: 0.82rem;
     font-weight: 700;
+    color: #64748B;
+    background: #F1F5F9;
     padding: 3px 8px;
     border-radius: 4px;
-    background: var(--primary-bg);
-    color: var(--primary-color);
-    border: 1px solid var(--primary-light);
+    border: 1px solid #E2E8F0;
+    box-sizing: border-box;
 }
 
 .home-notice-item .notice-title {
     flex: 1;
     min-width: 0;
+    font-family: var(--font-headline);
     font-size: 0.95rem;
-    color: #222;
+    color: #0F172A;
     text-decoration: none;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    font-weight: 500;
+    font-weight: 600;
+    transition: color 0.2s ease;
 }
 
 .home-notice-item .notice-title:hover {
     color: var(--primary-color);
+    text-decoration: underline;
 }
 
-.home-notice-item .notice-date {
-    flex-shrink: 0;
-    font-family: var(--font-mono);
-    font-size: 0.82rem;
-    color: #999;
-}
-
-@media (max-width: 768px) {
-    .home-notice-item .notice-date { display: none; }
+@media (max-width: 640px) {
+    .home-notice-item {
+        flex-direction: column;
+        gap: 6px;
+        align-items: flex-start;
+    }
+    .home-notice-item .notice-title {
+        white-space: normal;
+    }
 }
 
 /* ── Gallery Grid ── */
@@ -1755,6 +1766,8 @@ img {
 
 .home-pub-year-badge {
     flex-shrink: 0;
+    width: 90px;
+    text-align: center;
     font-family: var(--font-mono);
     font-size: 0.82rem;
     font-weight: 700;
@@ -1764,6 +1777,7 @@ img {
     border-radius: 4px;
     border: 1px solid #E2E8F0;
     margin-top: 2px;
+    box-sizing: border-box;
 }
 
 .home-pub-content {

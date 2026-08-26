@@ -19,12 +19,12 @@ function initializeIndexPage() {
     const pubList = document.getElementById('home-publications-list');
     if (pubList) {
         if (publicationsData && publicationsData.length > 0) {
-            // Sort by year descending, then by id / original order
+            // Sort by year descending, then by id descending (newest on top)
             const sortedPubs = [...publicationsData].sort((a, b) => {
                 const yA = Number(a.year) || 0;
                 const yB = Number(b.year) || 0;
                 if (yB !== yA) return yB - yA;
-                return (a.id || 0) - (b.id || 0);
+                return (b.id || 0) - (a.id || 0);
             });
             const topPubs = sortedPubs.slice(0, 4);
 
@@ -51,9 +51,8 @@ function initializeIndexPage() {
             const sorted = [...newsData].sort((a, b) => (b.id || 0) - (a.id || 0)).slice(0, 4);
             newsList.innerHTML = sorted.map(n => `
                 <li class="home-notice-item">
-                    <span class="notice-badge ${n.isNew ? 'new' : ''}">${n.category || (n.isNew ? 'NEW' : 'News')}</span>
+                    <span class="home-notice-date-badge">${n.date}</span>
                     <a href="${prefix}community/notice-detail.html?id=${n.id}" class="notice-title">${n.title}</a>
-                    <span class="notice-date">${n.date}</span>
                 </li>
             `).join('');
         } else {
@@ -68,9 +67,8 @@ function initializeIndexPage() {
             const sorted = [...eventsData].sort((a, b) => (b.id || 0) - (a.id || 0)).slice(0, 3);
             eventsList.innerHTML = sorted.map(n => `
                 <li class="home-notice-item">
-                    <span class="notice-badge">${n.category || 'Event'}</span>
+                    <span class="home-notice-date-badge">${n.date}</span>
                     <a href="${prefix}community/news-detail.html?id=${n.id}" class="notice-title">${n.title}</a>
-                    <span class="notice-date">${n.date}</span>
                 </li>
             `).join('');
         } else {
