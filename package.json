@@ -1,0 +1,20 @@
+{
+  "name": "cbnu-research-web",
+  "version": "2.0.0",
+  "description": "CBNU Human-Computer Interaction & Data Mining Joint Research Group Website",
+  "scripts": {
+    "start": "powershell -ExecutionPolicy Bypass -File ./scripts/start-server.ps1",
+    "dev": "powershell -ExecutionPolicy Bypass -File ./scripts/start-server.ps1",
+    "build": "node scripts/build-data.js",
+    "build:data": "node scripts/build-data.js",
+    "sync": "powershell -ExecutionPolicy Bypass -File ./scripts/sync-data.ps1"
+  },
+  "keywords": [
+    "cbnu",
+    "hci",
+    "data-mining",
+    "research-group"
+  ],
+  "author": "CBNU Research Group",
+  "license": "ISC"
+}

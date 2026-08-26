@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Publications - CBNU Research Group</title>
+    <meta name="description" content="Publications and academic contributions by CBNU HCI Lab & DM Lab.">
+    <link rel="stylesheet" href="../styles.css?v=20260825v1">
+    <!-- Google Material Symbols -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+</head>
+<body>
+    <!-- Header -->
+    <div id="header-placeholder"></div>
+
+    <main class="page-content">
+        <div class="page-header">
+            <div class="container">
+                <h1 class="page-title">Publications</h1>
+                <p class="page-breadcrumb">
+                    <a href="../index.html">Home</a> &gt;
+                    <span>Publications</span>
+                </p>
+            </div>
+        </div>
+
+        <div class="container">
+            <!-- Filter & Search Toolbar -->
+            <div class="pub-toolbar">
+                <div class="pub-toolbar-top">
+                    <!-- Scope/Category Filter Tabs -->
+                    <div class="pub-category-tabs people-tabs">
+                        <button class="tab-btn active" data-target="all">All</button>
+                        <button class="tab-btn" data-target="int-conf">Int'l Conference</button>
+                        <button class="tab-btn" data-target="int-journal">Int'l Journal</button>
+                        <button class="tab-btn" data-target="preprint">Preprint</button>
+                        <button class="tab-btn" data-target="domestic">Domestic</button>
+                    </div>
+
+                    <!-- Lab Filter Select -->
+                    <div class="pub-lab-filter-wrap">
+                        <label for="pub-lab-select" class="pub-filter-label">Lab:</label>
+                        <select id="pub-lab-select" class="pub-select-control">
+                            <option value="all">All Laboratories</option>
+                            <option value="hci">HCI Lab</option>
+                            <option value="dm">DM Lab</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="pub-toolbar-bottom">
+                    <!-- Search Input Box -->
+                    <div class="pub-search-wrap">
+                        <span class="material-symbols-outlined pub-search-icon">search</span>
+                        <input type="text" id="pub-search-input" class="pub-search-input" placeholder="Search by title, author, venue, award, or keyword..." autocomplete="off">
+                    </div>
+
+                    <!-- Counter -->
+                    <div id="pub-count-display" class="pub-count-text">
+                        Loading publications...
+                    </div>
+                </div>
+            </div>
+
+            <!-- Publications Dynamic List Container -->
+            <div id="publications-container" class="publications-list-wrapper">
+                <!-- JavaScript renders year-grouped publications here -->
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <div id="footer-placeholder"></div>
+
+    <script src="../components.js"></script>
+    <script src="../script.js"></script>
+    <script src="../js/data-loader.js"></script>
+    <script src="../js/publications-list.js"></script>
+</body>
+</html>

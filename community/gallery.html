@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - CBNU Research Group</title>
+    <meta name="description" content="Photos, events, and lab moments of CBNU Research Group.">
+    <link rel="stylesheet" href="../styles.css?v=20260825v3">
+    <!-- Google Material Symbols -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+    <style>
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 24px;
+            padding: 20px 0 60px;
+        }
+        .gallery-item {
+            border-radius: 12px;
+            overflow: hidden;
+            background: #FFFFFF;
+            border: 1px solid var(--border-color);
+            position: relative;
+            cursor: pointer;
+            transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0 4px 14px rgba(0, 0, 0, 0.04);
+        }
+        .gallery-item:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
+            border-color: var(--primary-color);
+        }
+        .gallery-img-wrapper {
+            aspect-ratio: 16 / 10;
+            overflow: hidden;
+            background: #F1F5F9;
+        }
+        .gallery-img-wrapper img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.35s ease;
+        }
+        .gallery-item:hover .gallery-img-wrapper img {
+            transform: scale(1.04);
+        }
+        .gallery-item-info {
+            padding: 16px 18px;
+        }
+        .gallery-item-caption {
+            font-size: 1rem;
+            font-weight: 700;
+            color: #1E293B;
+            margin-bottom: 6px;
+            line-height: 1.4;
+        }
+        .gallery-item-date {
+            font-size: 0.82rem;
+            color: #64748B;
+            font-family: var(--font-mono);
+        }
+        .gallery-empty-state-box {
+            grid-column: 1 / -1;
+            padding: 80px 20px;
+            text-align: center;
+            background: #F8FAFC;
+            border: 2px dashed #CBD5E1;
+            border-radius: 16px;
+            color: #64748B;
+            margin: 20px 0 60px;
+        }
+        .gallery-empty-state-box span {
+            font-size: 56px;
+            color: #94A3B8;
+            display: block;
+            margin-bottom: 12px;
+        }
+        .gallery-empty-state-box h3 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: #334155;
+            margin-bottom: 8px;
+        }
+        .gallery-empty-state-box p {
+            font-size: 0.95rem;
+            color: #64748B;
+            margin: 0;
+        }
+        /* Modal Lightbox */
+        .lightbox-modal {
+            display: none;
+            position: fixed;
+            z-index: 9999;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: rgba(15, 23, 42, 0.85);
+            backdrop-filter: blur(4px);
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        .lightbox-modal.active {
+            display: flex;
+        }
+        .lightbox-content {
+            max-width: 900px;
+            max-height: 90vh;
+            background: #FFFFFF;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+            position: relative;
+            display: flex;
+            flex-direction: column;
+        }
+        .lightbox-content img {
+            max-width: 100%;
+            max-height: 75vh;
+            object-fit: contain;
+            background: #0F172A;
+        }
+        .lightbox-caption {
+            padding: 16px 20px;
+            background: #FFFFFF;
+        }
+        .lightbox-caption h4 {
+            margin: 0 0 4px;
+            font-size: 1.1rem;
+            color: #1E293B;
+        }
+        .lightbox-caption p {
+            margin: 0;
+            font-size: 0.9rem;
+            color: #64748B;
+        }
+        .lightbox-close {
+            position: absolute;
+            top: 12px; right: 12px;
+            background: rgba(15, 23, 42, 0.7);
+            color: #FFFFFF;
+            border: none;
+            border-radius: 50%;
+            width: 36px; height: 36px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            transition: background 0.2s;
+        }
+        .lightbox-close:hover {
+            background: rgba(15, 23, 42, 0.95);
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <div id="header-placeholder"></div>
+
+    <main class="page-content">
+        <div class="page-header">
+            <div class="container">
+                <h1 class="page-title">Gallery</h1>
+                <p class="page-breadcrumb">
+                    <a href="../index.html">Home</a> &gt; <span>Gallery</span>
+                </p>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="gallery-grid" id="gallery-grid-container">
+                <div class="gallery-empty-state-box">
+                    <span class="material-symbols-outlined">photo_library</span>
+                    <h3>No Photos Yet</h3>
+                    <p>New research group photos and activity moments will be updated here soon.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Lightbox Modal -->
+    <div class="lightbox-modal" id="lightboxModal" onclick="closeLightbox(event)">
+        <div class="lightbox-content" onclick="event.stopPropagation()">
+            <button class="lightbox-close" onclick="closeLightbox()">&times;</button>
+            <img id="lightboxImg" src="" alt="Full preview">
+            <div class="lightbox-caption">
+                <h4 id="lightboxTitle"></h4>
+                <p id="lightboxDesc"></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div id="footer-placeholder"></div>
+
+    <script src="../components.js"></script>
+    <script src="../script.js"></script>
+    <script src="../js/data-loader.js"></script>
+    <script>
+        function renderGallery() {
+            const container = document.getElementById('gallery-grid-container');
+            if (!container) return;
+            if (typeof galleryData !== 'undefined' && galleryData.length > 0 && galleryData.some(g => g.thumbnail || g.image)) {
+                const valid = galleryData.filter(g => g.thumbnail || g.image);
+                container.innerHTML = valid.map((g, idx) => `
+                    <div class="gallery-item" onclick="openLightbox(${idx})">
+                        <div class="gallery-img-wrapper">
+                            <img src="${g.thumbnail || g.image}" alt="${g.title || 'Gallery photo'}" loading="lazy">
+                        </div>
+                        <div class="gallery-item-info">
+                            <div class="gallery-item-caption">${g.title || 'Lab Photo'}</div>
+                            ${g.date ? `<div class="gallery-item-date">${g.date}</div>` : ''}
+                        </div>
+                    </div>
+                `).join('');
+            } else {
+                container.innerHTML = `
+                    <div class="gallery-empty-state-box">
+                        <span class="material-symbols-outlined">photo_library</span>
+                        <h3>No Photos Yet</h3>
+                        <p>New research group photos and activity moments will be updated here soon.</p>
+                    </div>
+                `;
+            }
+        }
+
+        let currentValidGallery = [];
+        function openLightbox(index) {
+            const valid = (typeof galleryData !== 'undefined' ? galleryData : []).filter(g => g.thumbnail || g.image);
+            const item = valid[index];
+            if (!item) return;
+
+            document.getElementById('lightboxImg').src = item.image || item.thumbnail;
+            document.getElementById('lightboxTitle').textContent = item.title || 'Lab Photo';
+            document.getElementById('lightboxDesc').textContent = item.description || item.date || '';
+            document.getElementById('lightboxModal').classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeLightbox() {
+            const modal = document.getElementById('lightboxModal');
+            if (modal) modal.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') closeLightbox();
+        });
+
+        window.addEventListener('dataLoaded', renderGallery);
+        if (typeof galleryData !== 'undefined' && galleryData.length > 0) {
+            renderGallery();
+        }
+    </script>
+</body>
+</html>
