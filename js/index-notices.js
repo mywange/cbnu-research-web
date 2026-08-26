@@ -9,6 +9,12 @@ function formatHomePubAuthors(authorsStr) {
 }
 
 function initializeIndexPage() {
+    const isSubdir = window.location.pathname.includes('/about/') ||
+                     window.location.pathname.includes('/community/') ||
+                     window.location.pathname.includes('/people/') ||
+                     window.location.pathname.includes('/publications/');
+    const prefix = isSubdir ? '../' : '';
+
     // ── Recent Publications Showcase ──
     const pubList = document.getElementById('home-publications-list');
     if (pubList) {
@@ -26,7 +32,7 @@ function initializeIndexPage() {
                 <li class="home-pub-item">
                     <span class="home-pub-year-badge">${p.year}</span>
                     <div class="home-pub-content">
-                        <a href="publications/publications.html" class="home-pub-title">
+                        <a href="${prefix}publications/publications.html" class="home-pub-title">
                             ${p.title}
                         </a>
                         <div class="home-pub-venue">${p.venue}</div>
@@ -46,7 +52,7 @@ function initializeIndexPage() {
             newsList.innerHTML = sorted.map(n => `
                 <li class="home-notice-item">
                     <span class="notice-badge ${n.isNew ? 'new' : ''}">${n.category || (n.isNew ? 'NEW' : 'News')}</span>
-                    <a href="community/notice-detail.html?id=${n.id}" class="notice-title">${n.title}</a>
+                    <a href="${prefix}community/notice-detail.html?id=${n.id}" class="notice-title">${n.title}</a>
                     <span class="notice-date">${n.date}</span>
                 </li>
             `).join('');
@@ -63,7 +69,7 @@ function initializeIndexPage() {
             eventsList.innerHTML = sorted.map(n => `
                 <li class="home-notice-item">
                     <span class="notice-badge">${n.category || 'Event'}</span>
-                    <a href="community/news-detail.html?id=${n.id}" class="notice-title">${n.title}</a>
+                    <a href="${prefix}community/news-detail.html?id=${n.id}" class="notice-title">${n.title}</a>
                     <span class="notice-date">${n.date}</span>
                 </li>
             `).join('');
@@ -80,10 +86,11 @@ function initializeIndexPage() {
             const sorted = [...validPhotos].sort((a, b) => (b.id || 0) - (a.id || 0)).slice(0, 3);
             galleryGrid.innerHTML = sorted.map(g => {
                 const rawPath = g.thumbnail || g.image || '';
-                // Resolve path for root index.html (remove leading ../)
-                const cleanImgPath = rawPath.replace(/^\.\.\//, '');
+                const cleanImgPath = isSubdir
+                    ? (rawPath.startsWith('../') ? rawPath : `../${rawPath}`)
+                    : rawPath.replace(/^\.\.\//, '');
                 return `
-                <a href="community/gallery.html" class="home-gallery-item">
+                <a href="${prefix}community/gallery.html" class="home-gallery-item">
                     ${g.date ? `<span class="home-gallery-date-badge">${g.date}</span>` : ''}
                     <img src="${cleanImgPath}" alt="${g.title || 'Lab Photo'}" loading="lazy">
                     <div class="home-gallery-overlay">

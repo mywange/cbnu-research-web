@@ -9,8 +9,8 @@ function loadHeader() {
             <div class="container">
                 <a href="index.html" class="logo-section">
                     <div class="project-logo">
-                        <h1>CBNU Research Group</h1>
-                        <span class="subtitle">Human-Computer Interaction &amp; Data Mining</span>
+                        <h1>CBNU DxH Research Group</h1>
+                        <span class="subtitle">Data Mining &amp; Human-Computer Interaction</span>
                     </div>
                     <div class="university-logo">
                         <img src="assets/CBNU_logo.png" alt="충북대학교 로고">
@@ -59,14 +59,14 @@ function loadFooter() {
         <div class="container">
             <div class="footer-content">
                 <div class="footer-info">
-                    <h3>CBNU Research Group</h3>
+                    <h3>CBNU DxH Research Group</h3>
                     <p>Chungbuk National University • School of Computer Science &amp; School of Information and Communication Engineering</p>
                     <p>Location: 1 Chungdae-ro, Seowon-gu, Cheongju-si, Chungcheongbuk-do</p>
                     <p style="margin-top: 4px;">Administrator: ssw51112@chungbuk.ac.kr</p>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 CBNU Research Group. All rights reserved.</p>
+                <p>&copy; 2026 CBNU DxH Research Group. All rights reserved.</p>
                 <p>Chungbuk National University</p>
             </div>
         </div>

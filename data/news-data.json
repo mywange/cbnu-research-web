@@ -1,12 +1,62 @@
 ﻿[
     {
-        "title":  "CBNU Research Group (HCI \u0026 DM Lab) 웹사이트 오픈 안내",
-        "date":  "2026.08.25",
-        "author":  "Admin",
-        "category":  "Notice",
+        "title":  "📄 Two papers have been accepted to ACM CIKM 2026 [BKCSA 3] (Short Paper Track)",
+        "date":  "2026.08.20",
+        "author":  "DM Lab",
+        "category":  "Publication",
         "isNew":  true,
-        "content":  "## CBNU Research Group 공식 웹사이트 오픈\n\n충북대학교 정보통신공학부 및 소프트웨어학부의 **인간-컴퓨터 상호작용(HCI) 연구실**과 **데이터 마이닝(DM) 연구실**이 결합된 공동 연구 그룹 웹사이트를 오픈하였습니다.",
-        "summary":  "## CBNU Research Group 공식 웹사이트 오픈\n\n충북대학교 정보통신공학부 및 소프트웨어학부의 **인간-컴퓨터 상호작용(HCI) 연구실**과 **데이터 마이닝(DM) 연구실**이 결합된 공동 연구 그룹 웹사이트를 오픈하였습니다.",
+        "content":  "Two research papers from our group have been accepted to **ACM CIKM 2026** (Short Paper Track) [BKCSA 3].\n\n- **PRISM: Reliable LLM Knowledge Distillation from Graph-Context Perspectives for Text-Attributed Graph Learning**  \n  *Junghyun Kim, Sobin Jung, David Y. Kang, Sang-Wook Kim*\n- **Who Should Teach? Confidence-Aware Dual-Teacher Learning for Few-Shot Node Classification on Text-Attributed Graphs**  \n  *Hojin Kim, Sujin Yoon, Sungsu Lim, Dongwon Lee, David Y. Kang*\n\nCongratulations to all authors!",
+        "summary":  "Two research papers from our group have been accepted to **ACM CIKM 2026** (Short Paper Track) [BKCSA 3].\n\n- **PRISM: Reliable LLM Knowledge Distillation from Graph-Context Perspectives for Text-Attributed Graph Learning**  \n  *Junghyun Kim, Sobin Jung, David Y. Kang, Sang-Wook Kim*\n- **Who Should Teach? Confidence-Aware Dual-Teacher Learning for Few-Shot Node Classification on Text-Attributed Graphs**  \n  *Hojin Kim, Sujin Yoon, Sungsu Lim, Dongwon Lee, David Y. Kang*\n\nCongratulations to all authors!",
         "id":  1
+    },
+    {
+        "title":  "💻 Our lab started a new research project \u0027CORAL\u0027 supported by NRF (한국연구재단)",
+        "date":  "2026.08.10",
+        "author":  "HCI Lab",
+        "category":  "Project",
+        "isNew":  true,
+        "content":  "Our lab started a new research project **\"CORAL: Development of Co-Regulation Agent Loop Technology for Daily Rhythm Recovery in Bipolar Disorder\"** (CORAL: 양극성 장애 환자의 일상 리듬 회복을 위한 인간-AI 공동조정형 에이전트 루프 기술 개발), supported by the **National Research Foundation of Korea (NRF / 한국연구재단)**.\n\nCongratulations 🎉",
+        "summary":  "Our lab started a new research project **\"CORAL: Development of Co-Regulation Agent Loop Technology for Daily Rhythm Recovery in Bipolar Disorder\"** (CORAL: 양극성 장애 환자의 일상 리듬 회복을 위한 인간-AI 공동조정형 에이전트 루프 기술 개발), supported by the **National Research Foundation of Korea (NRF / 한국연구재단)**.\n\nCongratulations 🎉",
+        "id":  2
+    },
+    {
+        "title":  "📄 Two short papers have been accepted to UbiComp 2026 [BKCSA - 3]",
+        "date":  "2026.07.20",
+        "author":  "HCI Lab",
+        "category":  "Publication",
+        "isNew":  false,
+        "content":  "Two short papers from our group have been accepted to **ACM UbiComp 2026** [BKCSA - 3].\n\n- **(Poster) Can LLMs Help Autistic Adults Understand Their Social Experiences? Self-Awareness Profiling from VR Sensor Data**  \n  *Changu Lee, Bogoan Kim*\n- **(Poster) CLEAR: Channel- and Domain-Aware Adaptive Receiver Selection in MIMO System Using a Large Language Model**  \n  *J Seo, Bogoan Kim†, D Sim†*\n\nCongratulations Changu and team!",
+        "summary":  "Two short papers from our group have been accepted to **ACM UbiComp 2026** [BKCSA - 3].\n\n- **(Poster) Can LLMs Help Autistic Adults Understand Their Social Experiences? Self-Awareness Profiling from VR Sensor Data**  \n  *Changu Lee, Bogoan Kim*\n- **(Poster) CLEAR: Channel- and Domain-Aware Adaptive Receiver Selection in MIMO System Using a Large Language Model**  \n  *J Seo, Bogoan Kim†, D Sim†*\n\nCongratulations Changu and team!",
+        "id":  3
+    },
+    {
+        "title":  "🧳 Our lab members attended the 1st Data Intelligence × Human-Computer Interaction Workshop @ UNIST",
+        "date":  "2026.07.15",
+        "author":  "Research Group",
+        "category":  "Activity",
+        "isNew":  false,
+        "content":  "Our lab members attended the **1st Data Intelligence × Human-Computer Interaction Workshop** hosted at UNIST.\n\nResearchers and students from CBNU DxH Research Group presented ongoing research topics and participated in active discussions on collaborative intelligence, behavioral sensing, and graph mining algorithms.",
+        "summary":  "Our lab members attended the **1st Data Intelligence × Human-Computer Interaction Workshop** hosted at UNIST.\n\nResearchers and students from CBNU DxH Research Group presented ongoing research topics and participated in active discussions on collaborative intelligence, behavioral sensing, and graph mining algorithms.",
+        "id":  4
+    },
+    {
+        "title":  "👨‍🎓 Seungjun Park (박승준) \u0026 Sujin Yoon (윤수진) transitioned to graduate students",
+        "date":  "2026.06.25",
+        "author":  "DM Lab",
+        "category":  "Members",
+        "isNew":  false,
+        "content":  "**Seungjun Park (박승준)** and **Sujin Yoon (윤수진)** transitioned from undergraduate research interns to graduate students in our lab.\n\nCongratulations and best wishes on their academic and research journey!",
+        "summary":  "**Seungjun Park (박승준)** and **Sujin Yoon (윤수진)** transitioned from undergraduate research interns to graduate students in our lab.\n\nCongratulations and best wishes on their academic and research journey!",
+        "id":  5
+    },
+    {
+        "title":  "📄 A paper has been accepted to ACM KDD 2026 [BKCSA 4]",
+        "date":  "2026.05.18",
+        "author":  "DM Lab",
+        "category":  "Publication",
+        "isNew":  false,
+        "content":  "Our research paper has been accepted to **ACM KDD 2026** [BKCSA 4].\n\n- **HyperGC: Learning Hypergraph Representations via Full Hyperedge Reconstruction and Contrastive Learning**  \n  *David Y. Kang*, So-Bin Jung*, Sang-Wook Kim*\n\nCongratulations to all authors!",
+        "summary":  "Our research paper has been accepted to **ACM KDD 2026** [BKCSA 4].\n\n- **HyperGC: Learning Hypergraph Representations via Full Hyperedge Reconstruction and Contrastive Learning**  \n  *David Y. Kang*, So-Bin Jung*, Sang-Wook Kim*\n\nCongratulations to all authors!",
+        "id":  6
     }
 ]

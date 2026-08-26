@@ -9,7 +9,7 @@ let currentSearchQuery = '';
 function formatAuthors(authorsStr) {
     if (!authorsStr) return '';
     // Highlight ONLY official CBNU Research Group People (Faculty, M.S. Students, Undergraduate Students)
-    const officialMembersPattern = /\b(David Y\. Kang\*?|David Yoon Suk Kang\*?|Yoonsuk Kang\*?|강윤석\*?|Bogoan Kim[†\*]?|김보관\*?|Hojin Kim\*?|김호진\*?|Changu Lee\*?|이창우\*?|Seungjun Park\*?|박승준\*?|Sujin Yoon\*?|윤수진\*?|Minhyeok Kim\*?|김민혁\*?|Dong Hyeon Lee\*?|Donghyeon Lee\*?|이동현\*?|Dong Wook Lee\*?|이동욱\*?|Dayun Jeong\*?|정다윤\*?|Siwang Seo\*?|서시왕\*?)\b/g;
+    const officialMembersPattern = /\b(David Y\. Kang\*?|David Yoon Suk Kang\*?|Yoonsuk Kang\*?|강윤석\*?|Bogoan Kim[†\*]?|B Kim[†\*]?|김보관\*?|Hojin Kim\*?|김호진\*?|Changu Lee\*?|C Lee\*?|이창우\*?|Seungjun Park\*?|박승준\*?|Sujin Yoon\*?|윤수진\*?|Minhyeok Kim\*?|김민혁\*?|Dong Hyeon Lee\*?|Donghyeon Lee\*?|이동현\*?|Dong Wook Lee\*?|이동욱\*?|Dayun Jeong\*?|정다윤\*?|Siwang Seo\*?|서시왕\*?)\b/g;
 
     return authorsStr.replace(officialMembersPattern, '<strong>$1</strong>');
 }
@@ -67,8 +67,8 @@ function matchesCategory(item, cat) {
 function matchesLab(item, lab) {
     if (lab === 'all') return true;
     const itemLab = String(item.lab || '').toLowerCase();
-    if (lab === 'hci') {
-        return itemLab.includes('hci');
+    if (lab === 'hai' || lab === 'hci') {
+        return itemLab.includes('hai') || itemLab.includes('hci');
     }
     if (lab === 'dm') {
         return itemLab.includes('dm');
@@ -163,9 +163,10 @@ function renderPublications() {
 
         itemsInYear.forEach(item => {
             const labName = item.lab || '';
-            const labClass = labName.includes('HCI') && labName.includes('DM')
+            const labUpper = labName.toUpperCase();
+            const labClass = (labUpper.includes('HAI') || labUpper.includes('HCI')) && labUpper.includes('DM')
                 ? 'badge-joint'
-                : (labName.includes('HCI') ? 'badge-hci' : (labName.includes('DM') ? 'badge-dm' : 'badge-joint'));
+                : (labUpper.includes('HAI') || labUpper.includes('HCI') ? 'badge-hci' : (labUpper.includes('DM') ? 'badge-dm' : 'badge-joint'));
 
             const awardBadge = item.award ? `<span class="pub-badge award-badge">🏅 ${item.award}</span>` : '';
             const rankBadge = item.rank ? `<span class="pub-badge rank-badge">⭐ ${item.rank}</span>` : '';

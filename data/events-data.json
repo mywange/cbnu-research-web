@@ -1,12 +1,22 @@
 ﻿[
     {
-        "title":  "2026 Fall Semester HCI \u0026 DM Lab Joint Research Seminar",
-        "date":  "2026.09.01",
-        "category":  "Seminar",
+        "title":  "2026 Fall Semester Opening Gathering \u0026 Dinner (2학기 개강회식)",
+        "date":  "2026.09.02",
+        "category":  "Gathering",
         "author":  "Research Group",
         "isNew":  true,
-        "content":  "## 📢 2026년 2학기 HCI \u0026 DM Lab 공동 정기 연구 세미나 개최 안내\n\n충북대학교 HCI Lab과 DM Lab 연구원 및 관심 있는 학부/대학원생 여러분을 대상으로 2026년 2학기 공동 정기 세미나를 개최합니다.\n\n- **일시**: 2026년 9월 1일 (화) 16:00 ~ 18:00\n- **장소**: E8-10관 (정보통신관) 410호 및 온라인 Zoom 병행\n- **주제**: Human-AI Interaction \u0026 Large Graph Foundation Models 최신 연구 동향",
-        "summary":  "## 📢 2026년 2학기 HCI \u0026 DM Lab 공동 정기 연구 세미나 개최 안내\n\n충북대학교 HCI Lab과 DM Lab 연구원 및 관심 있는 학부/대학원생 여러분을 대상으로 2026년 2학기 공동 정기 세미나를 개최합니다.\n\n- **일시**: 2026년 9월 1일 (화) 16:00 ~ 18:00\n- **장소**: E8-10관 (정보통신관) 410호 및 온라인 Zoom 병행\n- **주제**: Human-AI Interaction \u0026 Large Graph Foundation Models 최신 연구 동향",
+        "content":  "## 🍻 2026년 2학기 DxH Research Group 개강총회 및 개강회식\n\n- **일시**: 2026년 9월 2일 (수) 18:00\n- **장소**: 충북대학교 인근\n- **대상**: DxH Research Group (DM Lab \u0026 HCI Lab) 구성원 전원\n- **내용**: 2026년도 2학기 신학기 개강 맞이 연구 계획 공유 및 친목 도모를 위한 개강회식을 진행합니다.",
+        "summary":  "## 🍻 2026년 2학기 DxH Research Group 개강총회 및 개강회식\n\n- **일시**: 2026년 9월 2일 (수) 18:00\n- **장소**: 충북대학교 인근\n- **대상**: DxH Research Group (DM Lab \u0026 HCI Lab) 구성원 전원\n- **내용**: 2026년도 2학기 신학기 개강 맞이 연구 계획 공유 및 친목 도모를 위한 개강회식을 진행합니다.",
         "id":  1
+    },
+    {
+        "title":  "1st Data Intelligence × Human-Computer Interaction Workshop @ UNIST",
+        "date":  "2026.07.15",
+        "category":  "Workshop",
+        "author":  "Research Group",
+        "isNew":  false,
+        "content":  "## 🧳 제1회 Data Intelligence × HCI 공동 워크숍 @ UNIST\n\n- **일시**: 2026년 7월 15일\n- **장소**: 울산과학기술원 (UNIST)\n- **참여**: CBNU DxH Research Group (DM Lab \u0026 HCI Lab) 연구진 및 UNIST 공동 연구진\n- **주제**: Human-AI Interaction \u0026 Data Intelligence 융합 연구 교류 및 공동 세미나",
+        "summary":  "## 🧳 제1회 Data Intelligence × HCI 공동 워크숍 @ UNIST\n\n- **일시**: 2026년 7월 15일\n- **장소**: 울산과학기술원 (UNIST)\n- **참여**: CBNU DxH Research Group (DM Lab \u0026 HCI Lab) 연구진 및 UNIST 공동 연구진\n- **주제**: Human-AI Interaction \u0026 Data Intelligence 융합 연구 교류 및 공동 세미나",
+        "id":  2
     }
 ]

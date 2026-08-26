@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About - CBNU Research Group</title>
-    <meta name="description" content="About Chungbuk National University Human-Computer Interaction & Data Mining Research Group.">
+    <title>About - CBNU DxH Research Group</title>
+    <meta name="description" content="About Chungbuk National University Data Mining & Human-Computer Interaction Research Group (DxH).">
     <link rel="stylesheet" href="../styles.css?v=20260826v2">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -33,71 +33,87 @@
         <div class="container" style="padding-bottom: 70px;">
 
             <!-- Who We Are -->
-            <section class="about-section">
+            <section class="about-section" style="border-bottom: 1px solid var(--border-light); padding-bottom: 48px;">
                 <span class="about-section-label">Who We Are</span>
-                <h2>CBNU Research Group</h2>
+                <h2>CBNU DxH Research Group</h2>
                 <p>
-                    The CBNU Research Group is a collaborative research initiative uniting the Human-Computer Interaction (HCI) Lab and the Data Mining (DM) Lab from the School of Information and Communication Engineering and the School of Computer Science at Chungbuk National University. We investigate the principles governing interactions between humans and intelligent systems, researching and developing technologies that extract meaningful value and insights from large-scale, complex data.
+                    The CBNU DxH Research Group is a collaborative research initiative uniting the Data Mining (DM) Lab and the Human-Computer Interaction (HCI) Lab from the School of Computer Science and the School of Information and Communication Engineering at Chungbuk National University. We investigate the principles governing interactions between humans and intelligent systems, researching and developing technologies that extract meaningful value and insights from large-scale, complex data.
                 </p>
                 <p>
-                    Our core research areas span Human-AI Interaction, Graph Mining &amp; LLMs, Computing for Well-being, Text Mining &amp; LLMs, AI for Healthcare, Embodied Interaction in XR, and Behavioral Sensing &amp; Modeling. Grounded in rigorous empirical methodologies, we consistently publish our findings in premier international conferences and journals, including ACM CHI, ACM KDD, ACM CIKM, UbiComp, WWW, and IEEE TKDE.
+                    Our core research areas span Graph Mining &amp; LLMs, Human-AI Interaction, Text Mining &amp; LLMs, Computing for Well-being, AI for Healthcare, Embodied Interaction in XR, and Behavioral Sensing &amp; Modeling. Grounded in rigorous empirical methodologies, we consistently publish our findings in premier international conferences and journals, including ACM KDD, ACM CHI, ACM CIKM, UbiComp, WWW, and IEEE TKDE.
                 </p>
-            </section>
 
-            <!-- Our Vision -->
-            <section class="about-section">
-                <span class="about-section-label">Our Vision</span>
-                <h2>Empowering Human Agency, Engineering Data Intelligence</h2>
-                <p>
-                    We envision a future where artificial intelligence does not merely replace humans, but enhances human agency and provides genuine utility. By combining a deep understanding of user context and behavior with trustworthy, user-centered AI interactions and scalable data mining technologies, we pursue practical research that delivers positive real-world impact.
-                </p>
-            </section>
-
-            <!-- Our Mission -->
-            <section class="about-section">
-                <span class="about-section-label">Our Mission</span>
-                <h2>Discover, Design, Disseminate</h2>
-                <p>
-                    We discover new insights from human behavior and complex data (<strong>Discover</strong>), design intelligent systems based on these findings (<strong>Design</strong>), and disseminate validated research outcomes across academia and industry (<strong>Disseminate</strong>).
-                </p>
-                <div class="about-cards">
-                    <div class="about-card">
-                        <h3>Discover</h3>
-                        <p>Uncovering latent human needs and structural patterns within complex data through systematic empirical research and multimodal sensing.</p>
-                    </div>
-                    <div class="about-card">
-                        <h3>Design</h3>
-                        <p>Designing and implementing systems for real-world problem-solving by coupling human-centered principles with scalable graph AI algorithms.</p>
-                    </div>
-                    <div class="about-card">
-                        <h3>Disseminate</h3>
-                        <p>Broadening the societal impact of our research through top-tier conference publications, open-source releases, and industry-academic partnerships.</p>
-                    </div>
-                </div>
-            </section>
-
-            <!-- The Two Laboratories -->
-            <section class="about-section">
-                <span class="about-section-label">Laboratories</span>
-                <h2>Dual Pillars of Innovation</h2>
-                <div class="about-cards" style="grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));">
-                    <div class="about-card" style="border-left: 4px solid var(--primary-color);">
-                        <h3>HCI Lab (Human-Computer Interaction)</h3>
-                        <p><strong>Director:</strong> Prof. Bogoan Kim</p>
-                        <p><strong>Affiliation:</strong> School of Information and Communication Engineering</p>
-                        <p><strong>Focus:</strong> Human-AI Interaction, Computing for Well-being, Embodied Interaction in XR, Behavioral Sensing &amp; Modeling</p>
-                        <div class="about-card-meta">
-                            <span>Location: Room 410, E8-10 Bldg.</span>
+                <!-- Lab Cards (Clickable) -->
+                <div class="about-cards" style="grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); margin-top: 28px;">
+                    <!-- DM Lab -->
+                    <a href="https://sites.google.com/view/dmcbnu/home" target="_blank" rel="noopener noreferrer" class="about-card" style="border-left: 4px solid var(--secondary-color); text-decoration: none; color: inherit;">
+                        <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 12px;">
+                            <h3 style="color: var(--secondary-color); margin: 0;">DM Lab (Data Mining &amp; AI)</h3>
+                            <span class="material-symbols-outlined" style="color: #94a3b8; font-size: 20px;">open_in_new</span>
                         </div>
-                    </div>
-                    <div class="about-card" style="border-left: 4px solid var(--secondary-color);">
-                        <h3 style="color: var(--secondary-color);">DM Lab (Data Mining &amp; AI)</h3>
                         <p><strong>Director:</strong> Prof. David Yoon Suk Kang</p>
                         <p><strong>Affiliation:</strong> School of Computer Science</p>
                         <p><strong>Focus:</strong> Graph Mining using LLMs, Text Mining using LLMs, AI for Healthcare</p>
                         <div class="about-card-meta">
                             <span>Location: Room 402, S-14 Bldg.</span>
                         </div>
+                    </a>
+
+                    <!-- HCI Lab -->
+                    <a href="https://sites.google.com/view/cbnu-hci" target="_blank" rel="noopener noreferrer" class="about-card" style="border-left: 4px solid var(--primary-color); text-decoration: none; color: inherit;">
+                        <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 12px;">
+                            <h3 style="color: var(--primary-color); margin: 0;">HCI Lab (Human-Computer Interaction)</h3>
+                            <span class="material-symbols-outlined" style="color: #94a3b8; font-size: 20px;">open_in_new</span>
+                        </div>
+                        <p><strong>Director:</strong> Prof. Bogoan Kim</p>
+                        <p><strong>Affiliation:</strong> School of Information and Communication Engineering</p>
+                        <p><strong>Focus:</strong> Human-AI Interaction, Computing for Well-being, Embodied Interaction in XR, Behavioral Sensing &amp; Modeling</p>
+                        <div class="about-card-meta">
+                            <span>Location: Room 410, E8-10 Bldg.</span>
+                        </div>
+                    </a>
+                </div>
+            </section>
+
+            <!-- News -->
+            <section class="home-section" style="padding-top: 48px;">
+                <div class="home-section-header">
+                    <h2>News</h2>
+                    <a href="../community/notice.html" class="more-link">View All +</a>
+                </div>
+                <ul class="home-notice-list" id="home-news-list">
+                    <li class="home-notice-item" style="color: #64748b; justify-content: center; padding: 24px 0;">
+                        Loading news...
+                    </li>
+                </ul>
+            </section>
+
+            <!-- Events -->
+            <section class="home-section">
+                <div class="home-section-header">
+                    <h2>Events</h2>
+                    <a href="../community/news.html" class="more-link">View All +</a>
+                </div>
+                <ul class="home-notice-list" id="home-events-list">
+                    <li class="home-notice-item" style="color: #64748b; justify-content: center; padding: 24px 0;">
+                        Loading events...
+                    </li>
+                </ul>
+            </section>
+
+            <!-- Gallery -->
+            <section class="home-section">
+                <div class="home-section-header">
+                    <h2>Gallery</h2>
+                    <a href="../community/gallery.html" class="more-link">View All +</a>
+                </div>
+                <div class="home-gallery-grid" id="home-gallery-grid">
+                    <div class="gallery-empty-state"
+                        style="grid-column: 1 / -1; padding: 40px 24px; text-align: center; background: #f8fafc; border: 1.5px dashed #cbd5e1; border-radius: 12px; color: #64748b;">
+                        <span class="material-symbols-outlined"
+                            style="font-size: 36px; color: #94a3b8; display: block; margin-bottom: 8px;">photo_library</span>
+                        <p style="margin: 0; font-size: 14px; font-weight: 500;">No gallery photos yet. Lab activity
+                            photos will be updated soon.</p>
                     </div>
                 </div>
             </section>
@@ -108,8 +124,10 @@
     <!-- Footer -->
     <div id="footer-placeholder"></div>
 
-    <script src="../components.js"></script>
-    <script src="../script.js"></script>
+    <script src="../components.js?v=20260826v2"></script>
+    <script src="../script.js?v=20260826v2"></script>
+    <script src="../js/data-loader.js?v=20260826v2"></script>
+    <script src="../js/index-notices.js?v=20260826v2"></script>
 </body>
 
 </html>
