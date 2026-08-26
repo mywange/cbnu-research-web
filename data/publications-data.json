@@ -26,7 +26,7 @@
   {
     "id": 81,
     "title": "[81] (Poster) Can LLMs Help Autistic Adults Understand Their Social Experiences? Self-Awareness Profiling from VR Sensor Data",
-    "authors": "C Lee, B Kim",
+    "authors": "Changu Lee, Bogoan Kim",
     "venue": "ACM UbiComp 2026",
     "year": 2026,
     "category": "conf",
@@ -38,7 +38,7 @@
   {
     "id": 80,
     "title": "[80] (Poster) CLEAR: Channel- and Domain-Aware Adaptive Receiver Selection in MIMO System Using a Large Language Model",
-    "authors": "J Seo, B Kim†, D Sim† (†co-corresponding)",
+    "authors": "Ji Yun Seo, Bogoan Kim, Dongkyu Sim († co-corresponding)",
     "venue": "ACM UbiComp 2026",
     "year": 2026,
     "category": "conf",
@@ -87,7 +87,7 @@
   {
     "id": 76,
     "title": "[76] When Special Education Meets LLMs: Investigating the use of LLM-based Conversational AI by Special Education Teachers for Autism in China",
-    "authors": "J Wu, D Choi, B Kim, H Hong",
+    "authors": "Jiazhou Wu, Dasom Choi, Bogoan Kim, Hwajung Hong",
     "venue": "ACM DIS 2026",
     "year": 2026,
     "category": "conf",
@@ -98,7 +98,7 @@
   {
     "id": 75,
     "title": "[75] (Poster) Agreement Between Smartphone- and Research-grade Accelerometer-measured Step Counts in Autistic Adults in Free-living Conditions",
-    "authors": "L McNulty, B Kim, AE Bodde, ML Mauriello, BC Helsel, D Lee",
+    "authors": "Lia McNulty, Bogoan Kim, Amy Bodde, Matthew Mauriello, Brian C. Helsel, D Lee",
     "venue": "ACSM 2026",
     "year": 2026,
     "category": "conf",
@@ -121,7 +121,7 @@
   {
     "id": 73,
     "title": "[73] QuerySwitch: Supporting the Design Process by Balancing Vagueness through LLMs",
-    "authors": "M Kim, B Kim, K Han",
+    "authors": "Myungjin Kim, Bogoan Kim, Kyungsik Han",
     "venue": "ACM CHI 2026",
     "year": 2026,
     "category": "conf",
@@ -137,7 +137,7 @@
   {
     "id": 72,
     "title": "[72] LAPS: Automating Hypothesis-Driven Statistical Analysis of Public Survey Using LLMs",
-    "authors": "J Kim*, D Jeong*, B Son, H Kim, B Kim, Kyungsik Han (*equal contribution)",
+    "authors": "Jaehoon Kim*, Dayoung Jeong*, Beejin Son, Hansung Kim, Bogoan Kim, Kyungsik Han (*equal contribution)",
     "venue": "ACM CHI 2026",
     "year": 2026,
     "category": "conf",
@@ -151,7 +151,7 @@
   {
     "id": 71,
     "title": "[71] “I Choose to Live, for Life Itself”: Understanding Agency of Home-Based Care Patients Through Information Practices and Relational Dynamics in Care Networks",
-    "authors": "S-I Kim*, J Park*, B Kim, H Hong (*equal contribution)",
+    "authors": "Sung-In Kim*, Joonyoung Park*, Bogoan Kim, Hwajung Hong (*equal contribution)",
     "venue": "ACM CHI 2026",
     "year": 2026,
     "category": "conf",
@@ -166,7 +166,7 @@
   {
     "id": 70,
     "title": "[70] Understanding Human-Multi-Agent Team Formation for Creative Work",
-    "authors": "H Lim, D Choi, S Nam, B Kim, H Hong",
+    "authors": "Hyunseung Lim, Dasom Choi, Sooyohn Nam, Bogoan Kim, Hwajung Hong",
     "venue": "ACM CHI 2026",
     "year": 2026,
     "category": "conf",
@@ -180,7 +180,7 @@
   {
     "id": 69,
     "title": "[69] VR-ACT: Transforming Clinical Evidence of Acceptance Commitment Therapy through VR for Subthreshold Depression",
-    "authors": "B Kim, D Jeong, YS Choi, H Kim, Kyungsik Han",
+    "authors": "Bogoan Kim, Dayoung Jeong, Yoonseon Choi, Hyungsook Kim, Kyungsik Han",
     "venue": "Springer Virtual Reality (2026.03)",
     "year": 2026,
     "category": "journal",

@@ -8,7 +8,10 @@ let currentSearchQuery = '';
 
 function formatAuthors(authorsStr) {
     if (!authorsStr) return '';
-    return authorsStr;
+    const targetMembersPattern = /\b(David Y\. Kang|Bogoan [Kk]im|Hojin Kim|Changu Lee|Seungjun Park|Sujin Yoon|Minhyeok Kim|Dong Hyeon Lee|Dayun Jeong|Dayoung Jeong|Siwang Seo|Dong Wook Lee)\b(\*|†)?/g;
+    return authorsStr.replace(targetMembersPattern, (match, name, mark) => {
+        return `<strong>${name}${mark || ''}</strong>`;
+    });
 }
 
 function renderLinkButtons(links) {
