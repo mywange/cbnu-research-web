@@ -108,13 +108,11 @@ syncFolder('news', 'news-data.json');
 syncFolder('events', 'events-data.json');
 syncFolder('gallery', 'gallery-data.json');
 
-// Sync Publications
+// Validate Publications
 const pubDataPath = path.join(dataDir, 'publications-data.json');
-const pubAliasPath = path.join(dataDir, 'publications.json');
 if (fs.existsSync(pubDataPath)) {
     const pubs = JSON.parse(fs.readFileSync(pubDataPath, 'utf-8'));
-    fs.copyFileSync(pubDataPath, pubAliasPath);
-    console.log(`[OK] publications-data.json synchronized (${pubs.length} publications).`);
+    console.log(`[OK] publications-data.json validated (${pubs.length} publications).`);
 }
 
 console.log('\nData synchronization finished successfully!');

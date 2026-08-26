@@ -121,15 +121,13 @@ Sync-FolderToDataJson -folderName "events" -outputJsonName "events-data.json" -t
 # 3. Sync Gallery
 Sync-FolderToDataJson -folderName "gallery" -outputJsonName "gallery-data.json" -typeName "Gallery"
 
-# 4. Sync Publications
+# 4. Validate Publications Data
 $pubDataPath = Join-Path $dataDir "publications-data.json"
-$pubAliasPath = Join-Path $dataDir "publications.json"
 
 if (Test-Path $pubDataPath) {
     try {
         $pubs = Get-Content -Path $pubDataPath -Raw -Encoding UTF8 | ConvertFrom-Json
-        Copy-Item -Path $pubDataPath -Destination $pubAliasPath -Force
-        Write-Host "[OK] publications-data.json & publications.json synchronized ($($pubs.Count) publications)." -ForegroundColor Green
+        Write-Host "[OK] publications-data.json validated successfully ($($pubs.Count) publications)." -ForegroundColor Green
     } catch {
         Write-Host "[ERROR] Invalid publications-data.json: $($_.Exception.Message)" -ForegroundColor Red
     }

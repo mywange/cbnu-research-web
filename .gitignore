@@ -16,6 +16,18 @@ Desktop.ini
 *~
 *.tmp
 
+# ── Private / RAW Photos & Uncompressed Media ──
+*.heic
+*.HEIC
+*.raw
+*.RAW
+*.cr2
+*.nef
+private/
+images/private/
+images/drafts/
+data/drafts/
+
 # ── IDE & Editor Settings ──
 .vscode/
 .idea/
@@ -27,6 +39,7 @@ Desktop.ini
 
 # ── Node.js / Package Manager ──
 node_modules/
+package-lock.json
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
