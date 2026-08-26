@@ -7,7 +7,7 @@
     <title>CBNU DxH Research Group | Data Mining &amp; HCI</title>
     <meta name="description"
         content="Chungbuk National University Data Mining & Human-Computer Interaction Joint Research Group (DxH).">
-    <link rel="stylesheet" href="styles.css?v=20260826v6">
+    <link rel="stylesheet" href="styles.css?v=20260826v8">
     <!-- Google Material Symbols -->
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
@@ -18,34 +18,28 @@
     <div id="header-placeholder"></div>
 
     <!-- Main Banner -->
-    <div class="hero-banner">
-        <div class="container">
-            <div class="hero-content">
-                <p class="hero-eyebrow">CBNU DxH Research Group</p>
-                <h2 class="hero-title">Chungbuk National University<br>DxH Research Group</h2>
-                <p class="hero-sub">Engineering Data Intelligence, Empowering Human Agency.</p>
-                <div class="hero-divider"></div>
-                <div class="hero-keywords">
-                    <span>Graph Mining &amp; LLMs</span>
-                    <span>Human-AI Interaction</span>
-                    <span>Healthcare AI</span>
-                    <span>Embodied XR</span>
-                    <span>Behavioral Sensing</span>
-                </div>
+    <section class="main-banner">
+        <div class="banner-content">
+            <h1 class="banner-title">CBNU DxH Research Group</h1>
+            <p class="banner-subtitle">
+                Data Mining &amp; Human-Computer Interaction
+            </p>
+            <p class="banner-desc">
+                충북대학교 소프트웨어학부(DM Lab)와 정보통신공학부(HCI Lab)가 함께 만들어가는 미래형 데이터 인텔리전스 및 인간-컴퓨터 인터랙션 융합 연구 그룹입니다.
+            </p>
+            <div class="banner-buttons">
+                <a href="about/about.html" class="btn btn-primary">About Us</a>
+                <a href="publications/publications.html" class="btn btn-secondary">Our Publications</a>
             </div>
         </div>
-    </div>
+    </section>
 
     <!-- Main Content -->
-    <main class="main-content">
+    <main class="page-content">
         <div class="container">
 
-            <!-- Research Laboratories -->
-            <section class="home-section">
-                <div class="home-section-header">
-                    <h2>Research Laboratories</h2>
-                </div>
-
+            <!-- Dual Pillars of Innovation (Labs) -->
+            <section class="home-section" style="padding-top: 10px;">
                 <div class="research-grid">
                     <!-- DM Lab -->
                     <a href="https://sites.google.com/view/dmcbnu/home" target="_blank" rel="noopener noreferrer"
@@ -99,31 +93,34 @@
                 </ul>
             </section>
 
-            <!-- News -->
-            <section class="home-section">
-                <div class="home-section-header">
-                    <h2>News</h2>
-                    <a href="community/notice.html" class="more-link">View All +</a>
-                </div>
-                <ul class="home-notice-list" id="home-news-list">
-                    <li class="home-notice-item" style="color: #64748b; justify-content: center; padding: 24px 0;">
-                        Loading news...
-                    </li>
-                </ul>
-            </section>
+            <!-- News & Events 2-Column Grid -->
+            <div class="home-two-col">
+                <!-- News -->
+                <section class="home-section">
+                    <div class="home-section-header">
+                        <h2>News</h2>
+                        <a href="community/notice.html" class="more-link">View All +</a>
+                    </div>
+                    <ul class="home-notice-list" id="home-news-list">
+                        <li class="home-notice-item" style="color: #64748b; justify-content: center; padding: 24px 0;">
+                            Loading news...
+                        </li>
+                    </ul>
+                </section>
 
-            <!-- Events -->
-            <section class="home-section">
-                <div class="home-section-header">
-                    <h2>Events</h2>
-                    <a href="community/news.html" class="more-link">View All +</a>
-                </div>
-                <ul class="home-notice-list" id="home-events-list">
-                    <li class="home-notice-item" style="color: #64748b; justify-content: center; padding: 24px 0;">
-                        Loading events...
-                    </li>
-                </ul>
-            </section>
+                <!-- Events -->
+                <section class="home-section">
+                    <div class="home-section-header">
+                        <h2>Events</h2>
+                        <a href="community/news.html" class="more-link">View All +</a>
+                    </div>
+                    <ul class="home-notice-list" id="home-events-list">
+                        <li class="home-notice-item" style="color: #64748b; justify-content: center; padding: 24px 0;">
+                            Loading events...
+                        </li>
+                    </ul>
+                </section>
+            </div>
 
             <!-- Gallery -->
             <section class="home-section">
@@ -132,11 +129,11 @@
                     <a href="community/gallery.html" class="more-link">View All +</a>
                 </div>
                 <div class="home-gallery-grid" id="home-gallery-grid">
-                    <div class="gallery-empty-state"
-                        style="grid-column: 1 / -1; padding: 40px 24px; text-align: center; background: #f8fafc; border: 1.5px dashed #cbd5e1; border-radius: 12px; color: #64748b;">
+                    <div class="home-gallery-card"
+                        style="grid-column: 1 / -1; text-align: center; padding: 48px 24px; background: #fff; border: 1px solid #e2e8f0; border-radius: 12px;">
                         <span class="material-symbols-outlined"
-                            style="font-size: 36px; color: #94a3b8; display: block; margin-bottom: 8px;">photo_library</span>
-                        <p style="margin: 0; font-size: 14px; font-weight: 500;">No gallery photos yet. Lab activity
+                            style="font-size: 48px; color: #94a3b8; margin-bottom: 12px; display: block;">photo_camera</span>
+                        <p style="color: #64748b; font-size: 15px; margin: 0;">Exciting research activities and lab
                             photos will be updated soon.</p>
                     </div>
                 </div>
@@ -148,10 +145,10 @@
     <!-- Footer -->
     <div id="footer-placeholder"></div>
 
-    <script src="components-index.js?v=20260826v7"></script>
-    <script src="script.js?v=20260826v7"></script>
-    <script src="js/data-loader.js?v=20260826v7"></script>
-    <script src="js/index-notices.js?v=20260826v7"></script>
+    <script src="components-index.js?v=20260826v8"></script>
+    <script src="script.js?v=20260826v8"></script>
+    <script src="js/data-loader.js?v=20260826v8"></script>
+    <script src="js/index-notices.js?v=20260826v8"></script>
 </body>
 
 </html>
