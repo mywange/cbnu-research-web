@@ -2,6 +2,16 @@
 // CBNU Research Group - News (Notice) Detail Controller
 // ==========================================================================
 
+function escapeHTML(str) {
+    if (!str) return '';
+    return String(str)
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;')
+        .replace(/'/g, '&#039;');
+}
+
 function getNoticeIdFromURL() {
     const urlParams = new URLSearchParams(window.location.search);
     return urlParams.get('id');
@@ -56,9 +66,11 @@ function displayNoticeDetail(notice) {
 
     // Optional: If there is a thumbnail image specified in frontmatter
     if (notice.thumbnail) {
+        const safeThumb = escapeHTML(notice.thumbnail);
+        const safeTitle = escapeHTML(notice.title || '');
         contentHtml = `
             <div class="post-featured-thumbnail" style="margin-bottom: 24px; text-align: center;">
-                <img src="${notice.thumbnail}" alt="${notice.title}" style="max-width: 100%; border-radius: 10px; box-shadow: 0 4px 18px rgba(0,0,0,0.06);">
+                <img src="${safeThumb}" alt="${safeTitle}" style="max-width: 100%; border-radius: 10px; box-shadow: 0 4px 18px rgba(0,0,0,0.06);">
             </div>
             ${contentHtml}
         `;
@@ -77,14 +89,17 @@ function displayNoticeDetail(notice) {
             <div class="notice-attachments">
                 <h3><span class="material-symbols-outlined" style="font-size: 19px; color: var(--primary-color);">attach_file</span> Attachments</h3>
                 <ul class="attachment-list">
-                    ${notice.attachments.map(file => `
+                    ${notice.attachments.map(file => {
+                        const safeUrl = escapeHTML(file.url || '#');
+                        const safeName = escapeHTML(file.name || 'Download File');
+                        return `
                         <li class="attachment-item">
-                            <a href="${file.url}" target="_blank" rel="noopener noreferrer" download>
+                            <a href="${safeUrl}" target="_blank" rel="noopener noreferrer" download>
                                 <span class="material-symbols-outlined" style="font-size: 17px;">description</span>
-                                <span class="file-name">${file.name || 'Download File'}</span>
+                                <span class="file-name">${safeName}</span>
                             </a>
                         </li>
-                    `).join('')}
+                    `}).join('')}
                 </ul>
             </div>
         `;
@@ -94,7 +109,7 @@ function displayNoticeDetail(notice) {
         }
     }
 
-    document.title = `${notice.title} - CBNU Research Group`;
+    document.title = `${notice.title} - CBNU DxH Research Group`;
 }
 
 function displayError(message) {
@@ -111,7 +126,7 @@ function displayError(message) {
             <div class="post-fallback-box">
                 <span class="material-symbols-outlined post-fallback-icon">error_outline</span>
                 <h3 class="post-fallback-title">404 - Content Unavailable</h3>
-                <p class="post-fallback-desc">${message}</p>
+                <p class="post-fallback-desc">${escapeHTML(message)}</p>
                 <div class="post-fallback-actions">
                     <a href="notice.html" class="btn btn-primary">Back to News List</a>
                     <a href="../index.html" class="btn btn-secondary">Go to Home</a>
