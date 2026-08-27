@@ -202,68 +202,54 @@ img {
     color: #FFFFFF;
 }
 
-.mobile-menu-toggle {
-    display: none;
-    background: none;
-    border: none;
-    cursor: pointer;
-    padding: 10px;
-}
-
-.mobile-menu-toggle span {
-    display: block;
-    width: 24px;
-    height: 2.5px;
-    background-color: var(--white);
-    margin: 5px 0;
-    border-radius: 2px;
-    transition: transform 0.25s ease, opacity 0.25s ease;
-}
-
+/* ── Mobile Navigation: Always-Visible Horizontal Swipe Navigation Bar ── */
 @media (max-width: 860px) {
-    .main-nav .container {
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-        min-height: 48px;
+    .main-nav {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none; /* Firefox */
+        min-height: 44px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
     }
-    .mobile-menu-toggle {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 44px;
-        height: 44px;
-        padding: 8px;
+    .main-nav::-webkit-scrollbar {
+        display: none; /* Chrome, Safari, Edge */
+    }
+    .main-nav .container {
+        padding: 0 4px;
+        max-width: 100%;
+        display: block;
     }
     .nav-menu {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        background: linear-gradient(180deg, #7A0E34 0%, #5E0926 100%);
-        box-shadow: 0 10px 24px rgba(0, 0, 0, 0.28);
-        border-top: 1px solid rgba(255, 255, 255, 0.12);
-        z-index: 1002;
-    }
-    .nav-menu.active {
         display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        width: max-content;
+        min-width: 100%;
+        margin: 0;
+        padding: 0 4px;
     }
     .nav-item {
-        width: 100%;
+        flex: 0 0 auto;
     }
     .nav-item > a {
-        text-align: left;
-        padding: 14px 20px;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-        font-size: 1rem;
+        display: block;
+        padding: 12px 14px;
+        font-size: 0.88rem;
+        font-weight: 600;
+        text-align: center;
+        white-space: nowrap;
+        border-bottom: 3px solid transparent;
+        letter-spacing: 0.01em;
     }
+    .nav-item > a:hover,
     .nav-item.active > a {
-        background-color: rgba(255, 255, 255, 0.14);
-        border-left: 4px solid #FFAEC5;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        background-color: rgba(255, 255, 255, 0.16);
+        border-bottom: 3px solid #FFAEC5;
+        color: #FFFFFF;
+    }
+    .mobile-menu-toggle {
+        display: none !important;
     }
     .project-logo h1 { font-size: 1.35rem; }
     .project-logo .subtitle { font-size: 0.78rem; }
@@ -272,7 +258,7 @@ img {
 
 @media (max-width: 480px) {
     .header-top {
-        padding: 12px 0;
+        padding: 10px 0;
     }
     .project-logo h1 {
         font-size: 1.15rem;
@@ -284,6 +270,10 @@ img {
     .university-logo img {
         height: 36px;
         max-height: 36px;
+    }
+    .nav-item > a {
+        padding: 11px 11px;
+        font-size: 0.84rem;
     }
 }
 

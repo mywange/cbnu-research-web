@@ -51,11 +51,6 @@ function loadHeader() {
                         <a href="../community/gallery.html">Gallery</a>
                     </li>
                 </ul>
-                <button class="mobile-menu-toggle" aria-label="Toggle navigation menu">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
             </div>
         </nav>
     </header>
@@ -83,46 +78,21 @@ function loadFooter() {
     `;
 }
 
-document.addEventListener('DOMContentLoaded', function () {
+function initComponentsSubpage() {
     const headerPlaceholder = document.getElementById('header-placeholder');
-    if (headerPlaceholder) {
+    if (headerPlaceholder && !headerPlaceholder.hasChildNodes()) {
         headerPlaceholder.innerHTML = loadHeader();
     }
 
     const footerPlaceholder = document.getElementById('footer-placeholder');
-    if (footerPlaceholder) {
+    if (footerPlaceholder && !footerPlaceholder.hasChildNodes()) {
         footerPlaceholder.innerHTML = loadFooter();
     }
+}
 
-    const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
-    const navMenu = document.querySelector('.nav-menu');
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initComponentsSubpage);
+} else {
+    initComponentsSubpage();
+}
 
-    if (mobileMenuToggle && navMenu) {
-        mobileMenuToggle.addEventListener('click', function () {
-            navMenu.classList.toggle('active');
-            this.classList.toggle('active');
-
-            const spans = this.querySelectorAll('span');
-            if (this.classList.contains('active')) {
-                spans[0].style.transform = 'rotate(45deg) translate(5px, 5px)';
-                spans[1].style.opacity = '0';
-                spans[2].style.transform = 'rotate(-45deg) translate(6px, -6px)';
-            } else {
-                spans[0].style.transform = 'none';
-                spans[1].style.opacity = '1';
-                spans[2].style.transform = 'none';
-            }
-        });
-
-        document.addEventListener('click', function (e) {
-            if (!e.target.closest('.main-nav') && navMenu.classList.contains('active')) {
-                navMenu.classList.remove('active');
-                mobileMenuToggle.classList.remove('active');
-                const spans = mobileMenuToggle.querySelectorAll('span');
-                spans[0].style.transform = 'none';
-                spans[1].style.opacity = '1';
-                spans[2].style.transform = 'none';
-            }
-        });
-    }
-});
