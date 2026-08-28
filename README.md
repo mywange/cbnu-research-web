@@ -8,7 +8,7 @@
 
 본 웹사이트는 충북대학교 Data Mining & HCI 공동 연구 그룹(DxH)의 비전, 교수진 및 연구원 소개, 최신 연구 논문(Publications) 목록, 연구실 공지 및 학술 행사 소식을 공유하기 위해 제작되었습니다.
 
-- **공식 배포 웹사이트**: [https://mywange.github.io/cbnu-research-web/](https://mywange.github.io/cbnu-research-web/)
+- **공식 배포 웹사이트**: [https://dxh.cbnu.ac.kr](https://dxh.cbnu.ac.kr)
 - **소속**: 충북대학교 소프트웨어학부 / 정보통신공학부
 - **연구 분야**:
   - **DM Lab**: Graph Mining using LLMs, Text Mining using LLMs, AI for Healthcare
@@ -30,7 +30,7 @@
 
 - **Frontend**: HTML5, Vanilla CSS, Vanilla JavaScript
 - **Data Format**: Markdown (.md), JSON (.json)
-- **Hosting**: GitHub Pages
+- **Hosting**: Ubuntu 24.04 LTS, Nginx 1.24, Let's Encrypt SSL/TLS
 
 ---
 
