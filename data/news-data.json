@@ -1,11 +1,19 @@
 ﻿[
     {
+        "title":  "🎊 Hojin Kim and Changu Lee have been selected for the NRF Master\u0027s Fellowship. Congratulations",
+        "date":  "2026.08.31",
+        "author":  "Admin",
+        "content":  "**Hojin Kim** (DM Lab) and **Changu Lee** (HCI Lab) have been selected for the **NRF Korea M.S. Fellowship (2026–2027)** supported by the **National Research Foundation of Korea (NRF)**.\n\nCongratulations to Hojin Kim and Changu Lee on this prestigious fellowship and outstanding achievement! 🎉👏",
+        "summary":  "**Hojin Kim** (DM Lab) and **Changu Lee** (HCI Lab) have been selected for the **NRF Korea M.S. Fellowship (2026–2027)** supported by the **National Research Foundation of Korea (NRF)**.\n\nCongratulations to Hojin Kim and Changu Lee on this prestigious fellowship and outstanding achievement! 🎉👏",
+        "id":  1
+    },
+    {
         "title":  "📄 Two papers from DM Lab have been accepted to ACM CIKM 2026 [BKCSA 3] (Short Paper Track)",
         "date":  "2026.08.20",
         "author":  "Admin",
         "content":  "Two research papers from **DM Lab (Data Mining Lab)** have been accepted to **ACM CIKM 2026** (Short Paper Track) [BKCSA 3].\n\n- **PRISM: Reliable LLM Knowledge Distillation from Graph-Context Perspectives for Text-Attributed Graph Learning**  \n  *Junghyun Kim, Sobin Jung, David Y. Kang, Sang-Wook Kim*\n- **Who Should Teach? Confidence-Aware Dual-Teacher Learning for Few-Shot Node Classification on Text-Attributed Graphs**  \n  *Hojin Kim, Sujin Yoon, Sungsu Lim, Dongwon Lee, David Y. Kang*\n\nCongratulations to the authors and the DM Lab research team on this outstanding achievement! 🎉",
         "summary":  "Two research papers from **DM Lab (Data Mining Lab)** have been accepted to **ACM CIKM 2026** (Short Paper Track) [BKCSA 3].\n\n- **PRISM: Reliable LLM Knowledge Distillation from Graph-Context Perspectives for Text-Attributed Graph Learning**  \n  *Junghyun Kim, Sobin Jung, David Y. Kang, Sang-Wook Kim*\n- **Who Should Teach? Confidence-Aware Dual-Teacher Learning for Few-Shot Node Classification on Text-Attributed Graphs**  \n  *Hojin Kim, Sujin Yoon, Sungsu Lim, Dongwon Lee, David Y. Kang*\n\nCongratulations to the authors and the DM Lab research team on this outstanding achievement! 🎉",
-        "id":  1
+        "id":  2
     },
     {
         "title":  "💻 HCI Lab started a new research project \u0027CORAL\u0027 supported by NRF",
@@ -13,7 +21,7 @@
         "author":  "Admin",
         "content":  "**HCI Lab (Human-Computer Interaction Lab)** has launched a new research project, **\"CORAL: Development of Co-Regulation Agent Loop Technology for Daily Rhythm Recovery in Bipolar Disorder\"**, supported by the **National Research Foundation of Korea (NRF)**.\n\nWe look forward to their impactful contributions and wish the HCI Lab research team great success with the new project! 🎉",
         "summary":  "**HCI Lab (Human-Computer Interaction Lab)** has launched a new research project, **\"CORAL: Development of Co-Regulation Agent Loop Technology for Daily Rhythm Recovery in Bipolar Disorder\"**, supported by the **National Research Foundation of Korea (NRF)**.\n\nWe look forward to their impactful contributions and wish the HCI Lab research team great success with the new project! 🎉",
-        "id":  2
+        "id":  3
     },
     {
         "title":  "🧳 CBNU DxH Research Group members attended the 1st Data Intelligence × HCI Workshop @ UNIST",
@@ -21,7 +29,7 @@
         "author":  "Admin",
         "content":  "Members of **CBNU DxH Research Group (DM Lab \u0026 HCI Lab)** participated in the **1st Data Intelligence × Human-Computer Interaction Workshop** (July 28–29, 2026) hosted at UNIST (Ulsan National Institute of Science and Technology).\n\nFaculty members and students from both labs shared their latest research findings and engaged in fruitful discussions on interdisciplinary research bridging data mining algorithms and interactive intelligent systems.",
         "summary":  "Members of **CBNU DxH Research Group (DM Lab \u0026 HCI Lab)** participated in the **1st Data Intelligence × Human-Computer Interaction Workshop** (July 28–29, 2026) hosted at UNIST (Ulsan National Institute of Science and Technology).\n\nFaculty members and students from both labs shared their latest research findings and engaged in fruitful discussions on interdisciplinary research bridging data mining algorithms and interactive intelligent systems.",
-        "id":  3
+        "id":  4
     },
     {
         "title":  "📄 Two short papers from HCI Lab have been accepted to ACM UbiComp 2026 [BKCSA 3]",
@@ -29,7 +37,7 @@
         "author":  "Admin",
         "content":  "Two short papers from **HCI Lab (Human-Computer Interaction Lab)** have been accepted to **ACM UbiComp 2026** [BKCSA 3].\n\n- **(Poster) Can LLMs Help Autistic Adults Understand Their Social Experiences? Self-Awareness Profiling from VR Sensor Data**  \n  *Changu Lee, Bogoan Kim*\n- **(Poster) CLEAR: Channel- and Domain-Aware Adaptive Receiver Selection in MIMO System Using a Large Language Model**  \n  *J Seo, Bogoan Kim†, D Sim†*\n\nCongratulations to Changu Lee and the HCI Lab team on their acceptance! 👏",
         "summary":  "Two short papers from **HCI Lab (Human-Computer Interaction Lab)** have been accepted to **ACM UbiComp 2026** [BKCSA 3].\n\n- **(Poster) Can LLMs Help Autistic Adults Understand Their Social Experiences? Self-Awareness Profiling from VR Sensor Data**  \n  *Changu Lee, Bogoan Kim*\n- **(Poster) CLEAR: Channel- and Domain-Aware Adaptive Receiver Selection in MIMO System Using a Large Language Model**  \n  *J Seo, Bogoan Kim†, D Sim†*\n\nCongratulations to Changu Lee and the HCI Lab team on their acceptance! 👏",
-        "id":  4
+        "id":  5
     },
     {
         "title":  "👨‍🎓 Seungjun Park \u0026 Sujin Yoon transitioned to graduate students in DM Lab",
@@ -37,7 +45,7 @@
         "author":  "Admin",
         "content":  "**Seungjun Park** and **Sujin Yoon** have successfully concluded their undergraduate research internships and transitioned into the M.S. graduate program at **DM Lab**.\n\nPlease join us in congratulating both researchers and wishing them the very best on their academic and research journey! 🎓✨",
         "summary":  "**Seungjun Park** and **Sujin Yoon** have successfully concluded their undergraduate research internships and transitioned into the M.S. graduate program at **DM Lab**.\n\nPlease join us in congratulating both researchers and wishing them the very best on their academic and research journey! 🎓✨",
-        "id":  5
+        "id":  6
     },
     {
         "title":  "📄 A paper from DM Lab has been accepted to ACM KDD 2026 [BKCSA 4]",
@@ -45,6 +53,6 @@
         "author":  "Admin",
         "content":  "A research paper from **DM Lab (Data Mining Lab)** has been accepted to **ACM KDD 2026** [BKCSA 4], the premier conference in data science and data mining.\n\n- **HyperGC: Learning Hypergraph Representations via Full Hyperedge Reconstruction and Contrastive Learning**  \n  *David Y. Kang*, So-Bin Jung*, Sang-Wook Kim*\n\nCongratulations to the DM Lab team and all co-authors on this great accomplishment! 👏",
         "summary":  "A research paper from **DM Lab (Data Mining Lab)** has been accepted to **ACM KDD 2026** [BKCSA 4], the premier conference in data science and data mining.\n\n- **HyperGC: Learning Hypergraph Representations via Full Hyperedge Reconstruction and Contrastive Learning**  \n  *David Y. Kang*, So-Bin Jung*, Sang-Wook Kim*\n\nCongratulations to the DM Lab team and all co-authors on this great accomplishment! 👏",
-        "id":  6
+        "id":  7
     }
 ]
