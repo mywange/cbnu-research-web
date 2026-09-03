@@ -1,6 +1,17 @@
 ﻿[
     {
-        "id":  1,
+        "title":  "2026 Fall Semester Opening Gathering \u0026 Dinner",
+        "date":  "2026.09",
+        "category":  "Gathering",
+        "thumbnail":  "../images/gallery/2026 Fall Semester Opening Gathering \u0026 Dinner.jpg",
+        "image":  "../images/gallery/2026 Fall Semester Opening Gathering \u0026 Dinner.jpg",
+        "description":  "2026 Fall Semester DxH Research Group Opening Gathering \u0026 Dinner.",
+        "content":  "2026 Fall Semester CBNU DxH Research Group (DM Lab \u0026 HCI Lab) Opening Gathering and Dinner held on September 2, 2026.",
+        "summary":  "2026 Fall Semester CBNU DxH Research Group (DM Lab \u0026 HCI Lab) Opening Gathering and Dinner held on September 2, 2026.",
+        "id":  1
+    },
+    {
+        "id":  2,
         "title":  "Data Intelligence × Human-Computer Interaction Workshop",
         "date":  "2026.07",
         "category":  "Workshop",
