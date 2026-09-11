@@ -53,20 +53,13 @@ function formatYearMonth(dateStr) {
 function displayNoticeDetail(notice) {
     // Set Header Metadata
     const titleEl = document.getElementById('notice-title');
-    const categoryEl = document.getElementById('notice-category');
-    const newBadgeEl = document.getElementById('notice-new-badge');
     const authorEl = document.getElementById('notice-author');
     const dateEl = document.getElementById('notice-date');
     const contentEl = document.getElementById('notice-content');
 
     if (titleEl) titleEl.textContent = notice.title;
-    if (categoryEl) categoryEl.textContent = notice.category || 'News';
     if (authorEl) authorEl.textContent = notice.author || 'Admin';
     if (dateEl) dateEl.textContent = formatYearMonth(notice.date);
-
-    if (newBadgeEl) {
-        newBadgeEl.style.display = notice.isNew ? 'inline-block' : 'none';
-    }
 
     // Markdown Content Parsing
     const raw = notice.content || notice.summary || '';

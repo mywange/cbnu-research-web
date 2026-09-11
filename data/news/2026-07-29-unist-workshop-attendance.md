@@ -1,4 +1,5 @@
 ---
+id: 4
 title: "🧳 CBNU DxH Research Group members attended the 1st Data Intelligence × HCI Workshop @ UNIST"
 date: "2026.07.29"
 author: "Admin"

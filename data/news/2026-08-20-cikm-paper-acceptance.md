@@ -1,4 +1,5 @@
 ---
+id: 6
 title: "📄 Two papers from DM Lab have been accepted to ACM CIKM 2026 [BKCSA 3] (Short Paper Track)"
 date: "2026.08.20"
 author: "Admin"

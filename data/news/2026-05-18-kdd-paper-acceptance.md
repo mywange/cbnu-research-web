@@ -1,4 +1,5 @@
 ---
+id: 1
 title: "📄 A paper from DM Lab has been accepted to ACM KDD 2026 [BKCSA 4]"
 date: "2026.05.18"
 author: "Admin"

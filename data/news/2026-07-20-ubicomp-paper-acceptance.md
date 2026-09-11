@@ -1,4 +1,5 @@
 ---
+id: 3
 title: "📄 Two short papers from HCI Lab have been accepted to ACM UbiComp 2026 [BKCSA 3]"
 date: "2026.07.20"
 author: "Admin"

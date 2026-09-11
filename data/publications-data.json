@@ -1,5 +1,17 @@
 [
   {
+    "id": 84,
+    "title": "[84] Gamified Digital Health Interventions for Physical Activity and Sedentary Behavior Changes in Individuals with Autism Spectrum Disorder: A Scoping Review",
+    "authors": "L McNulty, Bogoan Kim, A Bodde, M Mauriello, G Dominick, A Bhat, S Katz, D Lee",
+    "venue": "Games for Health Journal (2026.09)",
+    "year": 2026,
+    "category": "journal",
+    "scope": "intl",
+    "lab": "HAI",
+    "rank": "SCIE",
+    "links": {}
+  },
+  {
     "id": 83,
     "title": "[83] PRISM: Reliable LLM Knowledge Distillation from Graph-Context Perspectives for Text-Attributed Graph Learning",
     "authors": "Junghyun Kim, Sobin Jung, David Y. Kang, Sang-Wook Kim",

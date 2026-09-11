@@ -1,4 +1,5 @@
 ---
+id: 2
 title: "👨‍🎓 Seungjun Park & Sujin Yoon transitioned to graduate students in DM Lab"
 date: "2026.06.25"
 author: "Admin"

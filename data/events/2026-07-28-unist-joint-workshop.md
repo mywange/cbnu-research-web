@@ -1,4 +1,5 @@
 ---
+id: 1
 title: "🧳 1st Data Intelligence × Human-Computer Interaction Workshop @ UNIST"
 date: "2026.07.28"
 author: "Admin"

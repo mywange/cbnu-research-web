@@ -52,20 +52,13 @@ function formatYearMonth(dateStr) {
 function displayEventDetail(item) {
     // Set Header Metadata
     const titleEl = document.getElementById('notice-title');
-    const categoryEl = document.getElementById('notice-category');
-    const newBadgeEl = document.getElementById('notice-new-badge');
     const authorEl = document.getElementById('notice-author');
     const dateEl = document.getElementById('notice-date');
     const contentEl = document.getElementById('notice-content');
 
     if (titleEl) titleEl.textContent = item.title;
-    if (categoryEl) categoryEl.textContent = item.category || 'Event';
     if (authorEl) authorEl.textContent = item.author || 'Organizer';
     if (dateEl) dateEl.textContent = formatYearMonth(item.date);
-
-    if (newBadgeEl) {
-        newBadgeEl.style.display = item.isNew ? 'inline-block' : 'none';
-    }
 
     // Markdown Content Parsing
     const raw = item.content || item.summary || '';

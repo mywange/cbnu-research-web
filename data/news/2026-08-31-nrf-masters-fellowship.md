@@ -1,4 +1,5 @@
 ---
+id: 7
 title: "🎊 Hojin Kim and Changu Lee have been selected for the NRF Master's Fellowship. Congratulations"
 date: "2026.08.31"
 author: "Admin"

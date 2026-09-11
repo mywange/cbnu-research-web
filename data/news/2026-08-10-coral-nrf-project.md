@@ -1,4 +1,5 @@
 ---
+id: 5
 title: "💻 HCI Lab started a new research project 'CORAL' supported by NRF"
 date: "2026.08.10"
 author: "Admin"
